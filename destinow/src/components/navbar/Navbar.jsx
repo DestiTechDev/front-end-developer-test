@@ -3,6 +3,7 @@ import './Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrClose } from 'react-icons/gr'
 import { MdOutlineAirplaneTicket } from 'react-icons/md'
+import { Button } from '../button/Button'
 
 
 
@@ -74,6 +75,8 @@ function Navbar() {
                         </a>
                     </li>
                 </ul>
+
+                {button && <Button buttonSize={'btn--medium'}>CRIAR CONTA</Button>}
             </div>
         </div>
     )
