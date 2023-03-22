@@ -42,10 +42,21 @@ function Navbar() {
 
     return (
         <div className='navbar'>
+
+            <div className="navbar-informs hide">
+                <ul className="inf-menu">
+                    <li className='inf-itens'><a className="inf-links" href="mailto:destinow@gmail.com">destinow@gmail.com</a></li>
+                    <li className='inf-itens'><a className="inf-links" href="">Sobre nós</a></li>
+                    <li className='inf-itens'><a className="inf-links" href="">Contato</a></li>
+                    <li className='inf-itens'><a className="inf-links" href="">Fotos</a></li>
+                </ul>
+            </div>
+
+
             <div className="navbar-container">
                 {/* LOGO */}
                 <a href='#' className="navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
-                    <MdOutlineAirplaneTicket color='#007A78'/> DestiNow
+                    <MdOutlineAirplaneTicket color='#007A78' /> DestiNow
                 </a>
 
                 <div className="menu-icon" onClick={handleClickIcon}>
