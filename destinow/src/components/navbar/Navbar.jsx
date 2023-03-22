@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrClose } from 'react-icons/gr'
+import { MdOutlineAirplaneTicket } from 'react-icons/md'
+
+
 
 function Navbar() {
 
@@ -41,12 +44,12 @@ function Navbar() {
             <div className="navbar-container">
                 {/* LOGO */}
                 <a href='#' className="navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
-                    DestiNow
+                    <MdOutlineAirplaneTicket color='#007A78'/> DestiNow
                 </a>
 
                 <div className="menu-icon" onClick={handleClickIcon}>
                     {/* abaixo está um ternário onde se o botão for clicado, muda o icone - foi importado esses icones no index.html*/}
-                    {click ? <GrClose color='black' /> : <GiHamburgerMenu color='black' />}
+                    {click ? <GrClose color='#007A78' /> : <GiHamburgerMenu color='#007A78' />}
                 </div>
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
