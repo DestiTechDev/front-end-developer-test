@@ -2,7 +2,6 @@
     --light-color: #fff;
     --font-color: #131313;
     --backgroud-color: red;
-
     --font: "Arial"
 }
 
@@ -15,7 +14,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
   font-family: var(--font);
 }
 
@@ -38,10 +37,6 @@
   align-items: center;
 }
 
-.fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
-}
 
 .nav-menu {
   display: grid;
@@ -68,10 +63,6 @@
   transition: all 0.2s ease-out;
 }
 
-.fa-bars {
-  color: var(--font-color);
-}
-
 .nav-links-mobile {
   display: none;
 }
@@ -86,29 +77,36 @@
   }
 
   .nav-menu {
+    width: 100%;
+    max-width: 60%;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: flex-start;
-    height: 100vh;
-    position: absolute;
+    align-items: flex-start;
     top: 80px;
-    right: -100%;
+    right: 0;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease-in-out;
   }
 
   .nav-menu.active {
     background: red; 
     right: 0;
+    width: 100%;
+    height: 110vh;
+    visibility: visible;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     z-index: 1000;
+    margin: 0!important;
   }
 
   .nav-links {
     text-align: center;
-    padding: 0.5rem;
+    padding: 2rem;
     width: 100%;
     display: table;
   }
@@ -153,7 +151,7 @@
     color: var(--font-color);
     padding: 14px 20px;
     border: 1px solid var(--font-color);
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in;
   }
 
   .nav-links-mobile:hover {
