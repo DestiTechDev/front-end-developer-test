@@ -5,8 +5,18 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import { Button } from '../../button/Button';
+import { RiMapFill } from 'react-icons/ri'
+
 
 function Home() {
+
+    const destino = (
+        <>
+          <RiMapFill />
+          <span>Destino</span>
+        </>
+      );
+
     return (
         <Container className='home-container'>
             <Row className='home-row'>
@@ -15,7 +25,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://travelness.com.br/wp-content/uploads/2017/05/66142-turismo-na-tailandia-5-razoes-conhecer-o-pais-em-2017.jpg"
+                                src="https://images.mnstatic.com/f0/41/f041ccf7a92e2ba712b77ca0f701bf25.jpg"
                                 alt="First slide"
                             />
 
@@ -23,7 +33,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://www.vounajanela.com/wp-content/uploads/2020/04/chicken-krabi-tailandia.jpg"
+                                src="https://www.carroaluguel.com/blog/wp-content/uploads/2016/04/turismo-rio-de-janeiro.jpg"
                                 alt="Second slide"
                             />
 
@@ -31,7 +41,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://www.gov.br/turismo/pt-br/assuntos/noticias/municipios-devem-renovar-o-cadastro-para-continuar-participando-do-mapa-do-turismo/PortalMTur3.png/@@images/6f108e71-788b-4d13-9787-87f0e3e2cd79.png"
+                                src="https://marinhoturismobuzios.com.br/wp-content/uploads/2019/02/hoteis1.jpg"
                                 alt="Third slide"
                             />
                         </Carousel.Item>
@@ -39,11 +49,12 @@ function Home() {
             </Row>
 
             <Row className='home-row dois'>
+                
                 <Col className='home-col'>
                     <div className='home-select'>
                         <div>
                             <select>
-                                <option disabled selected>Destino</option>
+                                <option disabled selected>{destino}</option>
                                 <option value="Rio de Janeiro">Rio de Janeiro</option>
                                 <option value="São Paulo">São Paulo</option>
                                 <option value="Salvador">Salvador</option>

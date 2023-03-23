@@ -3,20 +3,24 @@
     padding: 0!important;
 }
 
+.home-container {
+    margin-top: 10px!important;
+}
+
 .home-row, .home-col, .home-car-item {
     width: 116.35%;
 }
 
 .home-car-item { 
-    height: 60vh;
+    height: 65vh;
 }
 
-.dois {
-    
+.home-car-item img { 
+    height: 700px;
 }
 
 .home-select {
-    width: 50%;
+    width: 70%;
     height: 90px;
     background: white;
     border-radius: 10px;
@@ -36,7 +40,11 @@
 select {
     cursor: pointer!important;
     border-radius: 5px;
-    padding: 8px;
-    background-color: #bbbbbb23;
+    padding: 8px 20px;
+    width: 180px;
+    background-color: #bbbbbb35;
     border: none;
 }
+
+
+
