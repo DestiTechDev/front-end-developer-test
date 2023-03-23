@@ -2,9 +2,9 @@ import React from "react"
 import './Button.css'
 
 // estilo para o botão primário (fundo branco) e btn outline (sem fundo, e com borda)
-const STYLES = ['btn--primary', 'btn--outline']
+const STYLES = ['meu-btn--primary', 'meu-btn--outline']
 
-const SIZES = ['btn--medium', 'btn--large']
+const SIZES = ['meu-btn--medium', 'meu-btn--large']
 
 export const Button = ({
     children,
@@ -19,9 +19,9 @@ export const Button = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-        <a href="/cadastro" className="btn-mobile">
+        <a href="/cadastro" className="meu-btn-mobile">
             <button
-                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                className={`meu-btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}
                 type={type}>
 

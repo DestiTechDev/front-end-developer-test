@@ -8,7 +8,7 @@
     --font-logo: #007A78;
   }
   
-  .btn {
+  .meu-btn {
     padding: 8px 20px;
     border-radius: 30px;
     outline: none;
@@ -16,13 +16,13 @@
     cursor: pointer;
   }
   
-  .btn--primary {
+  .meu-btn--primary {
     background-color: var(--font-logo);
     color: var(--light-color);
     border: 1px solid var(--font-logo);
   }
   
-  .btn--outline {
+  .meu-btn--outline {
     width: 170px;
     background-color: transparent;
     color: var(--font-logo);
@@ -31,18 +31,18 @@
     transition: all 0.3s ease-out;
   }
   
-  .btn--medium {
+  .meu-btn--medium {
     padding: 8px 20px;
     font-size: 18px;
   }
   
-  .btn--large {
+  .meu-btn--large {
     padding: 12px 26px;
     font-size: 20px;
   }
   
-  .btn--large:hover,
-  .btn--medium:hover {
+  .meu-btn--large:hover,
+  .meu-btn--medium:hover {
     transition: all 0.3s ease-out;
     background: var(--font-logo);
     color: var(--light-color);

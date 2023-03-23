@@ -41,21 +41,21 @@ function Navbar() {
     // {button && <Button buttonStyle='btn--outline'>CADASTRE-SE</Button>} COLOCAR NO FINAL
 
     return (
-        <div className='navbar'>
+        <div className='meu-navbar'>
 
-            <div className="navbar-informs hide">
-                <ul className="inf-menu">
-                    <li className='inf-itens'><a className="inf-links" href="mailto:destinow@gmail.com">destinow@gmail.com</a></li>
-                    <li className='inf-itens'><a className="inf-links" href="">Sobre nós</a></li>
-                    <li className='inf-itens'><a className="inf-links" href="">Contato</a></li>
-                    <li className='inf-itens'><a className="inf-links" href="">Fotos</a></li>
+            <div className="meu-navbar-informs hide">
+                <ul className="meu-inf-menu">
+                    <li className='meu-inf-itens'><a className="meu-inf-links" href="mailto:destinow@gmail.com">destinow@gmail.com</a></li>
+                    <li className='meu-inf-itens'><a className="meu-inf-links" href="">Sobre nós</a></li>
+                    <li className='meu-inf-itens'><a className="meu-inf-links" href="">Contato</a></li>
+                    <li className='meu-inf-itens'><a className="meu-inf-links" href="">Fotos</a></li>
                 </ul>
             </div>
 
 
-            <div className="navbar-container">
+            <div className="meu-navbar-container">
                 {/* LOGO */}
-                <a href='#' className="navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
+                <a href='#' className="meu-navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
                     <MdOutlineAirplaneTicket color='#007A78' /> DestiNow
                 </a>
 

@@ -6,9 +6,10 @@
     --font-logo: #007A78;
 }
 
-.navbar {
+.meu-navbar {
     background: var(--backgroud-color);
-    height: 80px;
+    height: 100px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,35 +21,36 @@
     font-family: var(--font);
 }
 
-.navbar-container {
+.meu-navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
+    padding: 20px;
     max-width: 1500px;
 }
 
-.navbar-informs {
+.meu-navbar-informs {
     background-color: var(--font-logo);
     width: 100%;
-    margin-bottom: 5px;
+    
 }
 
-.inf-menu {
+.meu-inf-menu {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 5px;
 }
 
-.inf-itens {
+.meu-inf-itens {
     margin-right: 60px;
     border-right: 1px solid white;
 }
 
-.inf-links {
+.meu-inf-links {
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: white;
@@ -56,7 +58,7 @@
     font-weight: bold;
 }
 
-.navbar-logo {
+.meu-navbar-logo {
     color: var(--font-logo);
     justify-self: start;
     margin-left: 20px;
@@ -65,6 +67,10 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+}
+
+.meu-navbar-logo:hover {
+    color: var(--font-logo);
 }
 
 
@@ -77,6 +83,8 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links {
@@ -84,11 +92,12 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid var(--font-logo);
+    color: var(--font-color)!important;
+    border-bottom: 4px solid var(--font-logo)!important;
     transition: all 0.2s ease-out;
 }
 
@@ -146,11 +155,10 @@
 
     .nav-links:hover {
         border-left: 4px solid var(--font-logo);
-        border-bottom: none;
-        color: var(--font-color);
+        border-bottom: none!important;
     }
 
-    .navbar-logo {
+    .meu-navbar-logo {
         position: absolute;
         top: 0;
         left: 0;
