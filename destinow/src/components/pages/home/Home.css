@@ -71,7 +71,7 @@ select {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        z-index: 100;
+        z-index: 10;
         height: 150%;
         top: -90px;
         margin-bottom: -35px;
@@ -89,5 +89,48 @@ select {
 
     Button {
         width: 100%;
+    }
+
+
+    @media only screen and (max-width: 758px) {
+
+        .home-row,
+        .home-col,
+        .home-car-item {
+            width: 100%;
+        }
+
+        .home-car-item {
+            height: auto;
+        }
+
+        .home-car-item {
+            height: 50vh;
+        }
+
+        .home-select {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 10;
+            height: 150%;
+            top: -90px;
+            margin-bottom: -35px;
+        }
+
+        .home-select div {
+            width: 100%;
+            flex-grow: 1;
+        }
+
+        select {
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        Button {
+            width: 100%;
+        }
     }
 }

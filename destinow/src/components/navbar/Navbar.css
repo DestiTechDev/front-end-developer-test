@@ -1,10 +1,11 @@
 :root {
-    --light-color: #fff;
-    --font-color: #131313;
+    --light-color: #FFFFFF;
+    --font-color: 000000;
     --backgroud-color: #fff;
-    --font: "Arial";
-    --font-logo: #007A78;
-}
+    --font: 'Inter', sans-serif;
+    --font-logo: #192945;
+  }
+  
 
 .meu-navbar {
     background: var(--backgroud-color);
@@ -33,7 +34,6 @@
 .meu-navbar-informs {
     background-color: var(--font-logo);
     width: 100%;
-    
 }
 
 .meu-inf-menu {
@@ -47,15 +47,19 @@
 
 .meu-inf-itens {
     margin-right: 60px;
-    border-right: 1px solid white;
+    border-right: 2px solid white;
 }
 
 .meu-inf-links {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     color: white;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 300;
+}
+
+.meu-inf-links:hover {
+    color: white;
 }
 
 .meu-navbar-logo {
@@ -137,12 +141,12 @@
     .nav-menu.active {
         background: var(--backgroud-color);
         right: 0;
-        width: 40%;
+        width: 50%;
         height: 110vh;
         visibility: visible;
         opacity: 1;
         transition: all 1s ease-in-out;
-        z-index: 10;
+        z-index: 10000;
         margin: 0 !important;
     }
 

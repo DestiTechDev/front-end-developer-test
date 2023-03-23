@@ -56,12 +56,12 @@ function Navbar() {
             <div className="meu-navbar-container">
                 {/* LOGO */}
                 <a href='#' className="meu-navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
-                    <MdOutlineAirplaneTicket color='#007A78' /> DestiNow
+                    <MdOutlineAirplaneTicket color='#192945' /> DestiNow
                 </a>
 
                 <div className="menu-icon" onClick={handleClickIcon}>
                     {/* abaixo está um ternário onde se o botão for clicado, muda o icone - foi importado esses icones no index.html*/}
-                    {click ? <GrClose color='#007A78' /> : <GiHamburgerMenu color='#007A78' />}
+                    {click ? <GrClose color='#192945' /> : <GiHamburgerMenu color='#007A78' />}
                 </div>
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
