@@ -1,50 +1,62 @@
 :root {
-    --primary: #fff;
+  --primary: #fff;
 
-    --light-color: #fff;
-    --font-color: #131313;
-    --backgroud-color: #fff;
-    --font: "Arial";
-    --font-logo: #007A78;
-  }
-  
-  .meu-btn {
-    padding: 8px 20px;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .meu-btn--primary {
-    background-color: var(--font-logo);
-    color: var(--light-color);
-    border: 1px solid var(--font-logo);
-  }
-  
-  .meu-btn--outline {
-    width: 170px;
-    background-color: transparent;
-    color: var(--font-logo);
-    padding: 8px 20px;
-    border: 1px solid var(--font-logo);
-    transition: all 0.3s ease-out;
-  }
-  
-  .meu-btn--medium {
-    padding: 8px 20px;
-    font-size: 18px;
-  }
-  
-  .meu-btn--large {
-    padding: 12px 26px;
-    font-size: 20px;
-  }
-  
-  .meu-btn--large:hover,
-  .meu-btn--medium:hover {
-    transition: all 0.3s ease-out;
-    background: var(--font-logo);
-    color: var(--light-color);
-    transition: 250ms;
-  }
+  --light-color: #fff;
+  --font-color: #131313;
+  --backgroud-color: #fff;
+  --font: "Arial";
+  --font-logo: #007A78;
+}
+
+.meu-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.meu-btn--primary {
+  background-color: var(--font-logo);
+  color: var(--light-color);
+  border: 1px solid var(--font-logo);
+}
+
+.meu-btn--outline {
+  width: 170px;
+  background-color: transparent;
+  color: var(--font-logo);
+  padding: 8px 20px;
+  border: 1px solid var(--font-logo);
+  transition: all 0.3s ease-out;
+}
+
+.meu-btn--primary-border {
+  background-color: var(--font-logo);
+  color: var(--light-color);
+  border: 1px solid var(--font-logo);
+  border-radius: 5px;
+}
+
+.meu-btn--small {
+  padding: 6px 18px;
+  font-size: 16px;
+}
+
+.meu-btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.meu-btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.meu-btn--large:hover,
+.meu-btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: var(--font-logo);
+  color: var(--light-color);
+  transition: 250ms;
+}

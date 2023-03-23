@@ -2,9 +2,9 @@ import React from "react"
 import './Button.css'
 
 // estilo para o botão primário (fundo branco) e btn outline (sem fundo, e com borda)
-const STYLES = ['meu-btn--primary', 'meu-btn--outline']
+const STYLES = ['meu-btn--primary', 'meu-btn--outline', 'meu-btn--primary-border']
 
-const SIZES = ['meu-btn--medium', 'meu-btn--large']
+const SIZES = ['meu-btn--small', 'meu-btn--medium', 'meu-btn--large']
 
 export const Button = ({
     children,

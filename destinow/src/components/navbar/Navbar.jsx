@@ -87,7 +87,7 @@ function Navbar() {
                     </li>
                 </ul>
 
-                {button && <Button buttonSize={'btn--medium'}>CRIAR CONTA</Button>}
+                {button && <Button buttonSize={'meu-btn--small'}>CRIAR CONTA</Button>}
             </div>
         </div>
     )
