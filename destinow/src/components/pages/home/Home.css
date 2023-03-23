@@ -1,21 +1,25 @@
-.home-container, .home-row, .home-col {
-    margin: 0!important;
-    padding: 0!important;
+.home-container,
+.home-row,
+.home-col {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .home-container {
-    margin-top: 10px!important;
+    margin-top: 10px !important;
 }
 
-.home-row, .home-col, .home-car-item {
+.home-row,
+.home-col,
+.home-car-item {
     width: 116.35%;
 }
 
-.home-car-item { 
+.home-car-item {
     height: 65vh;
 }
 
-.home-car-item img { 
+.home-car-item img {
     height: 700px;
 }
 
@@ -38,7 +42,7 @@
 }
 
 select {
-    cursor: pointer!important;
+    cursor: pointer !important;
     border-radius: 5px;
     padding: 8px 20px;
     width: 180px;
@@ -46,5 +50,44 @@ select {
     border: none;
 }
 
+@media only screen and (max-width: 1024px) {
 
+    .home-row,
+    .home-col,
+    .home-car-item {
+        width: 117.71%;
+    }
 
+    .home-car-item {
+        height: auto;
+    }
+
+    .home-car-item {
+        height: 50vh;
+    }
+
+    .home-select {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 100;
+        height: 150%;
+        top: -90px;
+        margin-bottom: -35px;
+    }
+
+    .home-select div {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    select {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    Button {
+        width: 100%;
+    }
+}
