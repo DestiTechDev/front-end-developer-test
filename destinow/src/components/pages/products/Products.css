@@ -1,0 +1,36 @@
+:root {
+    --primary: #fff;
+    --light-color: #FFFFFF;
+    --font-color: 000000;
+    --backgroud-color: #fff;
+    --font: 'Inter', sans-serif;
+    --font-logo: #192945;
+    --btn-alternativo: #4688F2;
+}
+
+.prod-container {
+    padding: 0!important;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    /* posiciona a metade da largura */
+    transform: translateX(-50%);
+    /* centraliza a linha */
+    width: 40px;
+    /* largura da linha */
+    height: 3px;
+    /* altura da linha */
+    background-color: var(--btn-alternativo);
+    /* cor da linha */
+}
+
