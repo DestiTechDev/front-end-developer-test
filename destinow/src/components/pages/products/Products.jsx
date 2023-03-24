@@ -5,6 +5,7 @@ import './Products.css'
 import Carousel from 'react-bootstrap/Carousel';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Cards from '../../card/Card';
+import <img2 className="png"></img2>
 
 function Products() {
     return (
@@ -29,7 +30,7 @@ function Products() {
                 <h1 className='titulo-dois'>NOSSAS ATIVIDADES</h1>
 
                 <div className="prodDivImg">
-                    <img src=".\src\assets\img1.png" className='img' />
+                    <img src="img1.png" className='img' />
                     <img src=".\src\assets\img2.png" className='img' />
                     <img src=".\src\assets\img3.png" className='img' />
                     <img src=".\src\assets\img4.png" className='img' />
