@@ -34,3 +34,17 @@ h1::after {
     /* cor da linha */
 }
 
+.prod-card { 
+    width: 80%;
+    margin: auto;
+
+}
+
+.prod-card-item {
+    border: 1px solid rgba(128, 128, 128, 0.345)!important;
+    border-radius: 10px!important;
+    margin: 20px;
+    border-top-left-radius: 10px!important;
+    border-top-right-radius: 10px!important;
+}
+

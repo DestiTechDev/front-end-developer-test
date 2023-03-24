@@ -17,7 +17,8 @@ function Products() {
                         <Carousel.Item interval={1000} className="prod-car-item">
                             <CardGroup className="prod-card">
                                 <Card className="prod-card-item">
-                                    <Card.Img className="prod-card-img" variant="top" src="image.png" />
+                    
+                                    <Card.Img className="prod-card-img" variant="top" src=".\src\assets\card1.png" />
                                     <Card.Body>
                                         <Card.Title>Card title</Card.Title>
                                         <Card.Text>
@@ -29,7 +30,7 @@ function Products() {
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </Card.Footer>
                                 </Card>
-                                <Card>
+                                <Card className="prod-card-item">
                                     <Card.Img className="prod-card-img" variant="top" src="holder.js/100px160" />
                                     <Card.Body>
                                         <Card.Title>Card title</Card.Title>
@@ -42,7 +43,8 @@ function Products() {
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </Card.Footer>
                                 </Card>
-                                <Card>
+
+                                <Card className="prod-card-item">
                                     <Card.Img className="prod-card-img" variant="top" src="holder.js/100px160" />
                                     <Card.Body>
                                         <Card.Title>Card title</Card.Title>
