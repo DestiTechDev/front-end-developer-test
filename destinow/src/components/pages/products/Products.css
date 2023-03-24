@@ -24,14 +24,14 @@
 .titulo::after {
     content: "";
     position: absolute;
-    bottom: 3%;
+    bottom: 8%;
     left: 50%;
     /* posiciona a metade da largura */
     transform: translateX(-50%);
     /* centraliza a linha */
     width: 40px;
     /* largura da linha */
-    height: 3px;
+    height: 4px;
     /* altura da linha */
     background-color: var(--btn-alternativo);
     /* cor da linha */
@@ -44,7 +44,7 @@
 .titulo-dois::after  {
     content: "";
     position: absolute;
-    bottom: -99%;
+    bottom: -85%;
     left: 50%;
     /* posiciona a metade da largura */
     transform: translateX(-50%);

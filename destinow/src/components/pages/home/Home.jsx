@@ -25,7 +25,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src=".\src\assets\bg-1grid.png"
+                                src="./assets/bg-1grid.png"
                                 alt="First slide"
                             />
 
@@ -33,7 +33,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src=".\src\assets\bg-1grid.png"
+                                src="./assets/bg-1grid.png"
                                 alt="Second slide"
                             />
 
@@ -41,7 +41,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src=".\src\assets\bg-1grid.png"
+                                src="./assets/bg-1grid.png"
                                 alt="Third slide"
                             />
                         </Carousel.Item>
