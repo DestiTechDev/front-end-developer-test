@@ -9,7 +9,7 @@ function Cards(props) {
 
                 <Card.Img className="prod-card-img" variant="top" src={props.src} />
                 <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
+                    <Card.Title className='prod-card-title'>{props.title}</Card.Title>
                     <Card.Text className='prod-cardText'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.
 

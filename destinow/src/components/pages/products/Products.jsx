@@ -11,7 +11,7 @@ function Products() {
         <Container className="prod-container">
             <Row className="prod-row">
 
-                <h1>NOSSOS PACOTES</h1>
+                <h1 className='titulo'>NOSSOS PACOTES</h1>
                 <Col className="prod-col">
                     <Carousel variant="dark" className="prod-carousel">
                         <Carousel.Item interval={1000} className="prod-car-item">
@@ -26,13 +26,13 @@ function Products() {
             </Row>
 
             <Row className="prod-row">
-                <h1>NOSSAS ATIVIDADES</h1>
+                <h1 className='titulo-dois'>NOSSAS ATIVIDADES</h1>
 
                 <div className="prodDivImg">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <img src=".\src\assets\img1.png" className='img' />
+                    <img src=".\src\assets\img2.png" className='img' />
+                    <img src=".\src\assets\img3.png" className='img' />
+                    <img src=".\src\assets\img4.png" className='img' />
                 </div>
             </Row>
         </Container>

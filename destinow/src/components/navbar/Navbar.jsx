@@ -61,7 +61,7 @@ function Navbar() {
 
                 <div className="menu-icon" onClick={handleClickIcon}>
                     {/* abaixo está um ternário onde se o botão for clicado, muda o icone - foi importado esses icones no index.html*/}
-                    {click ? <GrClose color='#192945' /> : <GiHamburgerMenu color='#007A78' />}
+                    {click ? <GrClose color='#192945' /> : <GiHamburgerMenu color='192945' />}
                 </div>
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
