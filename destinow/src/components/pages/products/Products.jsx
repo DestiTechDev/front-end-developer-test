@@ -16,18 +16,24 @@ function Products() {
                     <Carousel variant="dark" className="prod-carousel">
                         <Carousel.Item interval={1000} className="prod-car-item">
                             <CardGroup className="prod-card">
-                                <Cards src=".\src\assets\card1.png" price="R$800,00" />
-                                <Cards src=".\src\assets\card2.png" price="R$640,00"/>
-                                <Cards src=".\src\assets\card3.png" price="R$240,00"/>
+                                <Cards src=".\src\assets\card1.png" title="Salvador - BA" price="R$800,00" />
+                                <Cards src=".\src\assets\card2.png" title="Angra dos Reis - RJ" price="R$640,00" />
+                                <Cards src=".\src\assets\card3.png" title="São Paulo - SP" price="R$240,00" />
                             </CardGroup>
                         </Carousel.Item>
                     </Carousel>
                 </Col>
             </Row>
+
             <Row className="prod-row">
-                <Col className="prod-col">1 of 3</Col>
-                <Col className="prod-col" xs={5}>2 of 3 (wider)</Col>
-                <Col className="prod-col" >3 of 3</Col>
+                <h1>NOSSAS ATIVIDADES</h1>
+
+                <div className="prodDivImg">
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                </div>
             </Row>
         </Container>
     );
