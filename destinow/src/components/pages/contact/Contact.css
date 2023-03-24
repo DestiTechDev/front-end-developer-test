@@ -1,0 +1,10 @@
+.contact-container {
+    background-image: url("https://images.unsplash.com/photo-1620826699089-ef31a32989d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90px; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
