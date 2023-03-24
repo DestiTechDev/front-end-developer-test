@@ -25,7 +25,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://images.mnstatic.com/f0/41/f041ccf7a92e2ba712b77ca0f701bf25.jpg"
+                                src=".\src\assets\bg-1grid.png"
                                 alt="First slide"
                             />
 
@@ -33,7 +33,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://www.carroaluguel.com/blog/wp-content/uploads/2016/04/turismo-rio-de-janeiro.jpg"
+                                src=".\src\assets\bg-1grid.png"
                                 alt="Second slide"
                             />
 
@@ -41,7 +41,7 @@ function Home() {
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
                                 className="d-block w-100"
-                                src="https://marinhoturismobuzios.com.br/wp-content/uploads/2019/02/hoteis1.jpg"
+                                src=".\src\assets\bg-1grid.png"
                                 alt="Third slide"
                             />
                         </Carousel.Item>

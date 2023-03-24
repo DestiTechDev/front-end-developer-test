@@ -56,7 +56,7 @@ function Navbar() {
             <div className="meu-navbar-container">
                 {/* LOGO */}
                 <a href='#' className="meu-navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
-                    <MdOutlineAirplaneTicket color='#192945' /> DestiNow
+                    <MdOutlineAirplaneTicket color='#192945' /> DESTINOW
                 </a>
 
                 <div className="menu-icon" onClick={handleClickIcon}>
