@@ -10,6 +10,10 @@
 }
 
 
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: transparent;
+}
+
 .prod-container {
     padding: 0 !important;
     margin: auto;
@@ -81,21 +85,12 @@
     }
 
     .titulo::after {
-        content: "";
-        position: absolute;
         bottom: 7%;
-        left: 50%;
-        /* posiciona a metade da largura */
-        transform: translateX(-50%);
-        /* centraliza a linha */
-        width: 40px;
-        /* largura da linha */
-        height: 3px;
-        /* altura da linha */
-        background-color: var(--btn-alternativo);
-        /* cor da linha */
     }
 
+    .titulo-dois::after  {
+        bottom: -103%;
+    }
 
 
     @media only screen and (max-width: 758px) {
