@@ -7,7 +7,7 @@
 
 
 .home-container {
-    margin-top: 10px !important;
+    margin-top: 0.625rem !important;
 }
 
 .home-row,
@@ -20,16 +20,12 @@
     height: 60vh;
 }
 
-.home-car-item img {
-    
-}
-
 .home-select {
     width: 70%;
-    height: 90px;
+    height: 5.625rem;
     background: white;
-    border-radius: 10px;
-    box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.323);
+    border-radius: 0.625rem;
+    box-shadow: 0.1875rem 0.125rem 0.5625rem rgba(0, 0, 0, 0.323);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,29 +33,36 @@
     margin: auto;
 
     position: relative;
-    top: -50px;
-    margin-bottom: -50px;
+    top: -3.125rem;
+    margin-bottom: -3.125rem;
     z-index: 1;
 }
 
 select {
     cursor: pointer !important;
-    border-radius: 5px;
-    padding: 8px 20px;
-    width: 180px;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 1.25rem;
+    width: 11.25rem;
     background-color: #bbbbbb35;
     border: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64rem) {
 
     .home-container {
         width: 100%;
         max-width: 100%!important;
     }
 
+    img {
+        height: 11.25rem;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        margin-bottom: 12.5rem;
+    }
+
     .home-row,
-    .home-col,
     .home-car-item {
         width: 100%;
     }
@@ -70,6 +73,7 @@ select {
 
     .home-carrossel {
         width: 100%;
+        
     }
 
 
@@ -81,8 +85,8 @@ select {
         justify-content: space-around;
         z-index: 10;
         height: 150%;
-        top: -90px;
-        margin-bottom: -35px;
+        top: -5.625rem;
+        margin-bottom: -2.1875rem;
         
     }
 
@@ -93,7 +97,7 @@ select {
 
     select {
         width: 100%;
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
 
     Button {
@@ -101,8 +105,12 @@ select {
     }
 
 
-    @media only screen and (max-width: 758px) {
+    @media only screen and (max-width: 47.375rem) {
 
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-bottom: 14.5rem;
+        }
+        
         .home-container {
             width: 100%;
             max-width: 100%!important;
@@ -114,33 +122,24 @@ select {
             width: 100%;
         }
 
-        .home-car-item {
-            height: auto;
-        }
 
         .home-car-item {
-            height: 50vh;
+            height: 60vh;
         }
 
         .home-select {
-            width: 90%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             z-index: 10;
-            height: 150%;
-            top: -90px;
-            margin-bottom: -35px;
-        }
-
-        .home-select div {
-            width: 100%;
-            flex-grow: 1;
+            height: 170%;
+            top: -17.375rem;
         }
 
         select {
             width: 100%;
-            padding-left: 10px;
+            padding-left: 0.625rem;
         }
 
         Button {
