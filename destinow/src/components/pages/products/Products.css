@@ -86,13 +86,11 @@
     }
 
     .titulo::after {
-        bottom: -40%;
-        width: 40px;
+        display: none;
     }
 
     .titulo-dois::after {
-        bottom: -168%!important;
-        width: 40px;
+        display: none;
     }
 
     .carousel-dark .carousel-indicators [data-bs-target] {
@@ -127,19 +125,23 @@
 
         .titulo,
         .titulo-dois {
-            padding: 70px;
+            padding: 70px!important;
+        }
+
+        .titulo {
+            padding-bottom: 0!important;
         }
 
         .titulo::after {
-            bottom: -6.5%;
+            display: none;
         }
 
         .titulo-dois {
-            padding-top: 0;
+            padding-top: 0!important;
         }
 
         .titulo-dois::after {
-            bottom: -103%!important;
+            display: none;
         }
 
         .img {

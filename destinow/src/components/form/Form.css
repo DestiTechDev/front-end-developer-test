@@ -39,13 +39,39 @@
 }
 
 .form-control {
-    border-radius: 1px!important;
-    color: #707070!important;
-    background-color: #F7F7F7!important;
-    border: none!important;
+    border-radius: 1px !important;
+    color: #707070 !important;
+    background-color: #F7F7F7 !important;
+    border: none !important;
     font-size: 14px;
 }
 
 Button {
     width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .form-h3::after {
+        display: none;
+    }
+
+
+    @media only screen and (max-width: 758px) {
+        .form-h3::after {
+            display: none;
+        }
+
+        .form-container {
+            width: 80% !important;
+        }
+
+        .col-md-6 {
+            padding-bottom: 35px !important;
+        }
+        
+        textarea.form-control {
+            margin-top: -6%;
+        }
+    }
 }
