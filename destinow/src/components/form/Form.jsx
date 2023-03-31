@@ -19,7 +19,7 @@ function Forms() {
     };
 
     return (
-            <Form noValidate validated={validated} onSubmit={handleSubmit} className='form-container'>
+            <Form fluid noValidate validated={validated} onSubmit={handleSubmit} className='form-container'>
                 <h3 className='form-h3'>ENTRE EM CONTATO CONOSCO</h3>
                 <Row className="mb-3">
                     <Form.Group className="mb-3" controlId="validationCustom01">
