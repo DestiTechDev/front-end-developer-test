@@ -1,15 +1,51 @@
-.form-container {
-    width: 100%!important;
-    margin: auto!important;
-    background-color: white;
-    padding: 90px!important;
+:root {
+    --primary: #fff;
+
+    --light-color: #FFFFFF;
+    --font-color: #000000;
+    --backgroud-color: #fff;
+    --font: 'Poppins', sans-serif;
+    --font-logo: #192945;
+    --btn-alternativo: #4688F2;
 }
 
-.contact-container {
-    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+.form-container {
+    width: 120% !important;
+    margin: auto !important;
+    background-color: rgb(255, 255, 255);
+    padding: 70px !important;
+    font-family: var(--font);
+}
+
+.form-h3 {
+    text-align: center !important;
+    padding-bottom: 40px;
+}
+
+.form-h3::after {
+    content: "";
+    position: absolute;
+    bottom: -227%;
+    left: 50%;
+    /* posiciona a metade da largura */
+    transform: translateX(-50%);
+    /* centraliza a linha */
+    width: 40px;
+    /* largura da linha */
+    height: 4px;
+    /* altura da linha */
+    background-color: var(--btn-alternativo);
+    /* cor da linha */
+}
+
+.form-control {
+    border-radius: 1px!important;
+    color: #707070!important;
+    background-color: #F7F7F7!important;
+    border: none!important;
+    font-size: 14px;
+}
+
+Button {
+    width: 100%;
 }
