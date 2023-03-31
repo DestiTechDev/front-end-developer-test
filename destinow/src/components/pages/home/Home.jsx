@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
-import './Home.css'
+import './Test.css'
 import { Button } from '../../button/Button';
 import { RiMapFill } from 'react-icons/ri'
 
@@ -18,13 +18,13 @@ function Home() {
       );
 
     return (
-        <Container className='home-container'>
+        <Container fluid className='home-container'>
             <Row className='home-row'>
                 <Col className='home-col'>
                     <Carousel className="home-carrossel">
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
-                                className="d-block w-100"
+                                className="d-block"
                                 src="./assets/bg-1grid.png"
                                 alt="First slide"
                             />
@@ -32,7 +32,7 @@ function Home() {
                         </Carousel.Item>
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
-                                className="d-block w-100"
+                                className="d-block "
                                 src="./assets/bg-1grid.png"
                                 alt="Second slide"
                             />
@@ -40,7 +40,7 @@ function Home() {
                         </Carousel.Item>
                         <Carousel.Item interval={1500} className='home-car-item'>
                             <img
-                                className="d-block w-100"
+                                className="d-block"
                                 src="./assets/bg-1grid.png"
                                 alt="Third slide"
                             />
