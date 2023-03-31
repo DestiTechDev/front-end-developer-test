@@ -4,3 +4,12 @@
     background-color: white;
     padding: 90px!important;
 }
+
+.contact-container {
+    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
