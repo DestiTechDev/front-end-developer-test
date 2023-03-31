@@ -80,7 +80,7 @@ select {
 
     @media only screen and (max-width: 47.375rem) {
 
-        img {
+        .home-car-item img {
             width: 190% !important;
         }
 

@@ -100,24 +100,29 @@
     }
 
     @media only screen and (max-width: 758px) {
-
-        .prod-carousel {
-            padding: 70px !important;
-            width: 100%;
-            padding-top: 0 !important;
+        
+        .prod-container {
+            padding-top: 13%!important;
         }
 
-        .prod-col {
-            padding: 0 !important;
+        .carousel {
+            padding-top: 0!important;
+        }
+
+        .prod-cardFooter {
+            margin-top: 30px;
         }
 
         .prod-row:last-child {
-            padding: 5px;
+            padding: 0px;
         }
 
-        .img {
-            width: 300px;
-            height: auto;
+        .prod-card {
+            width: 350%;
+        }
+        
+        .prod-carousel {
+            padding: 40px !important;
         }
 
         .titulo,
@@ -126,11 +131,19 @@
         }
 
         .titulo::after {
-            bottom: -13%;
+            bottom: -6.5%;
+        }
+
+        .titulo-dois {
+            padding-top: 0;
         }
 
         .titulo-dois::after {
-            bottom: -113%;
+            bottom: -103%!important;
+        }
+
+        .img {
+            width: 70%;
         }
     }
 }
