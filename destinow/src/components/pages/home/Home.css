@@ -1,19 +1,11 @@
-.home-container,
-.home-row,
-.home-col {
+.home-container {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-
-.home-container {
-    margin-top: 0.625rem !important;
-}
-
-.home-row,
-.home-col,
-.home-car-item {
-    width: 115.1%;
+.home-col {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .home-car-item {
@@ -49,23 +41,6 @@ select {
 
 @media only screen and (max-width: 64rem) {
 
-    .home-container {
-        width: 100%;
-        max-width: 100%!important;
-    }
-
-    img {
-        height: 100px!important;
-    }
-
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        margin-bottom: 12.5rem;
-    }
-
-    .home-row,
-    .home-car-item {
-        width: 100%;
-    }
 
     .home-car-item {
         height: auto;
@@ -73,10 +48,8 @@ select {
 
     .home-carrossel {
         width: 100%;
-        
+
     }
-
-
 
     .home-select {
         width: 80%;
@@ -87,7 +60,7 @@ select {
         height: 150%;
         top: -5.625rem;
         margin-bottom: -2.1875rem;
-        
+
     }
 
     .home-select div {
@@ -107,24 +80,8 @@ select {
 
     @media only screen and (max-width: 47.375rem) {
 
-        .carousel-control-prev-icon, .carousel-control-next-icon {
-            margin-bottom: 14.5rem;
-        }
-        
-        .home-container {
-            width: 100%;
-            max-width: 100%!important;
-        }
-
-        .home-row,
-        .home-col,
-        .home-car-item {
-            width: 100%;
-        }
-
-
-        .home-car-item {
-            height: 60vh;
+        img {
+            width: 190% !important;
         }
 
         .home-select {
@@ -134,7 +91,7 @@ select {
             justify-content: space-around;
             z-index: 10;
             height: 170%;
-            top: -17.375rem;
+            top: -60px;
         }
 
         select {
