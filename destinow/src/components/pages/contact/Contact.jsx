@@ -7,9 +7,9 @@ import './Contact.css'
 function Contact() {
   return (
     <Container fluid contact className='contact-container' >
-      <Row>
-        <Forms />
-      </Row>
+        <Row>
+          <Forms />
+        </Row>
     </Container>
   );
 }
