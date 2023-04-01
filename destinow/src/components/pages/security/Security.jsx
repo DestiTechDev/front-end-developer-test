@@ -54,17 +54,17 @@ function Insurance() {
       </Row>
 
       <Row className='SndRow'>
-        <h5 className='SndRow-title'>BLOG</h5>
+        <h3 className='SndRow-title'>BLOG</h3>
 
         <Carousel variant="dark" className='SndRow-carousel'>
 
           <Carousel.Item className='SndRow-card'>
             <CardGroup className='SndRow-CG'>
-              <CardIns src="assets/rec1.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
+              <CardIns src="assets/rec1.png" titulo="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
 
-              <CardIns src="assets/rec2.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
+              <CardIns src="assets/rec2.png" titulo="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
 
-              <CardIns src="assets/rec3.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
+              <CardIns src="assets/rec3.png" titulo="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
             </CardGroup>
           </Carousel.Item>
 
