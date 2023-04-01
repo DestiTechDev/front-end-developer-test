@@ -7,6 +7,7 @@ import { BsGift } from 'react-icons/bs';
 import './Security.css'
 import Carousel from 'react-bootstrap/Carousel';
 import CardIns from '../../card/CardIns';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function Insurance() {
 
@@ -52,21 +53,19 @@ function Insurance() {
 
       </Row>
 
-      <Row className='2ndRow'>
-        <h5 className='2ndRow-title'>BLOG</h5>
+      <Row className='SndRow'>
+        <h5 className='SndRow-title'>BLOG</h5>
 
-        <Carousel>
+        <Carousel variant="dark" className='SndRow-carousel'>
 
-          <Carousel.Item>
-            <CardIns src=""/>
-          </Carousel.Item>
+          <Carousel.Item className='SndRow-card'>
+            <CardGroup className='SndRow-CG'>
+              <CardIns src="assets/rec1.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
 
-          <Carousel.Item>
-            <CardIns />
-          </Carousel.Item>
+              <CardIns src="assets/rec2.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
 
-          <Carousel.Item>
-            <CardIns />
+              <CardIns src="assets/rec3.png" title="The Best Trip" texto="The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" />
+            </CardGroup>
           </Carousel.Item>
 
         </Carousel>

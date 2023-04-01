@@ -1,14 +1,13 @@
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import "./CardIns.css"
 
 function CardIns(props) {
     return (
-        <Card>
-            <Card.Img src={props.src} />
-            <Card.Body>
-                <Card.Title>{props.titulo}</Card.Title>
-                <Card.Text>
+        <Card className='card-container'>
+            <Card.Img className='card-img' src={props.src} />
+            <Card.Body className='card-body'>
+                <Card.Title className='card-title'>{props.titulo}</Card.Title>
+                <Card.Text className='card-text'>
                     {props.texto}
                 </Card.Text>
             </Card.Body>
@@ -17,4 +16,4 @@ function CardIns(props) {
 }
 
 export default CardIns
-    ;
+    
