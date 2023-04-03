@@ -1,5 +1,5 @@
 .contact-container {
-    background-image: url('./assets/rio40graus.jpg')!important;
+    background-image: url('/assets/rio40graus.jpg');
     background-repeat: no-repeat;
     background-size: cover!important;
     height: 100vh;
