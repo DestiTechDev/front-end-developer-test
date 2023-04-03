@@ -94,17 +94,21 @@
     }
 
     .carousel-dark .carousel-indicators [data-bs-target] {
-        background-color: transparent!important;
+        background-color: transparent !important;
     }
 
     @media only screen and (max-width: 575px) {
-        
+
         .prod-container {
-            padding-top: 13%!important;
+            padding-top: 13% !important;
+        }
+
+        .prodDivImg {
+            margin-left: 15%;
         }
 
         .carousel {
-            padding-top: 0!important;
+            padding-top: 0 !important;
         }
 
         .prod-cardFooter {
@@ -118,18 +122,19 @@
         .prod-card {
             width: 350%;
         }
-        
+
         .prod-carousel {
             padding: 40px !important;
         }
 
         .titulo,
         .titulo-dois {
-            padding: 70px!important;
+            padding: 70px !important;
+            font-size: 24px;
         }
 
         .titulo {
-            padding-bottom: 0!important;
+            padding-bottom: 0 !important;
         }
 
         .titulo::after {
@@ -137,7 +142,7 @@
         }
 
         .titulo-dois {
-            padding-top: 0!important;
+            padding-top: 0 !important;
         }
 
         .titulo-dois::after {
