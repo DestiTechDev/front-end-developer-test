@@ -47,20 +47,15 @@
   text-align: center;
 }
 
-.SndRow-title::after {
-  content: "";
-  position: absolute;
-  bottom: -341%;
-  left: 50.3%;
-  /* posiciona a metade da largura */
-  transform: translateX(-50%);
-  /* centraliza a linha */
-  width: 45px;
-  /* largura da linha */
-  height: 4px;
-  /* altura da linha */
-  background-color: #4688F2;
-  /* cor da linha */
+.title hr {
+  width: 3% !important;
+  margin: auto !important;
+  padding: 2px;
+  background-color: #4688F2 !important;
+  opacity: 10 !important;
+  border: none !important;
+  margin-top: 20px!important;
+  margin-bottom: 50px !important;
 }
 
 .SndRow-carousel {
@@ -70,6 +65,7 @@
 
 .SndRow-card {
   padding: 100px;
+  padding-top: 10px;
 }
 
 .SndRow-CG {
@@ -138,6 +134,11 @@
     .carousel-dark .carousel-control-next-icon,
     .carousel-dark .carousel-control-prev-icon {
       display: none;
+    }
+
+    .title hr {
+      width: 8% !important;
+      margin-bottom: 5px!important;
     }
 
   }

@@ -56,7 +56,10 @@ function Insurance() {
 
       <Fade duration={2500}>
         <Row className='SndRow'>
-          <h3 className='SndRow-title'>BLOG</h3>
+          <div className="title">
+            <h3 className='SndRow-title'>BLOG</h3>
+            <hr/>
+          </div>
           <Carousel variant="dark" className='SndRow-carousel'>
             <Carousel.Item className='SndRow-card'>
               <CardGroup className='SndRow-CG'>

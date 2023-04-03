@@ -20,53 +20,30 @@
     font-family: var(--font);
 }
 
+hr {
+    width: 3%!important;
+    margin: auto!important;
+    padding: 2px;
+    background-color: var(--btn-alternativo)!important;
+    opacity: 10!important;
+    border: none!important;
+    margin-bottom: 50px!important;
+}
+
 .titulo,
 .titulo-dois {
     text-align: center;
     padding: 30px;
+    padding-bottom: 0px;
 }
 
-.titulo::after {
-    content: "";
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    /* posiciona a metade da largura */
-    transform: translateX(-50%);
-    /* centraliza a linha */
-    width: 40px;
-    /* largura da linha */
-    height: 4px;
-    /* altura da linha */
-    background-color: var(--btn-alternativo);
-    /* cor da linha */
-}
-
-.titulo-dois {
-    padding-bottom: 80px;
-}
-
-.titulo-dois::after {
-    content: "";
-    position: absolute;
-    bottom: -90%;
-    left: 50%;
-    /* posiciona a metade da largura */
-    transform: translateX(-50%);
-    /* centraliza a linha */
-    width: 40px;
-    /* largura da linha */
-    height: 4px;
-    /* altura da linha */
-    background-color: var(--btn-alternativo);
-    /* cor da linha */
-}
 
 .prod-row:last-child {
     padding: 50px;
 }
 
 .prodDivImg {
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,14 +62,6 @@
         padding: 90px !important;
     }
 
-    .titulo::after {
-        display: none;
-    }
-
-    .titulo-dois::after {
-        display: none;
-    }
-
     .carousel-dark .carousel-indicators [data-bs-target] {
         background-color: transparent !important;
     }
@@ -105,6 +74,7 @@
 
         .prodDivImg {
             margin-left: 15%;
+            padding-top: 70px;
         }
 
         .carousel {
@@ -129,28 +99,25 @@
 
         .titulo,
         .titulo-dois {
-            padding: 70px !important;
             font-size: 24px;
         }
 
         .titulo {
             padding-bottom: 0 !important;
-        }
-
-        .titulo::after {
-            display: none;
+            padding-top: 80px;
         }
 
         .titulo-dois {
             padding-top: 0 !important;
         }
 
-        .titulo-dois::after {
-            display: none;
-        }
-
         .img {
             width: 70%;
         }
+
+        hr {
+            width: 8% !important;
+            margin-bottom: 5px!important;
+          }
     }
 }

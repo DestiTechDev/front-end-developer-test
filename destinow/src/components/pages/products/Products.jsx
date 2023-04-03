@@ -14,6 +14,7 @@ function Products() {
             <Row className="prod-row">
 
                 <h1 className='titulo'>NOSSOS PACOTES</h1>
+                <hr/>
                 <Fade duration={2500}>
                     <Col className="prod-col">
                         <Carousel variant="dark" className="prod-carousel">
@@ -31,7 +32,7 @@ function Products() {
 
             <Row className="prod-row">
                 <h1 className='titulo-dois'>NOSSAS ATIVIDADES</h1>
-
+                <hr/>
                 <div className="prodDivImg">
                     <Slide direction={'left'}><img src="./assets/img1.png" className='img' /></Slide>
                     <Slide direction={'right'}><img src="./assets/img2.png" className='img' /></Slide>
