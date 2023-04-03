@@ -78,11 +78,11 @@ function Insurance() {
           <Carousel variant="dark" className='thdRow-carousel'>
             <Carousel.Item className='thdRow-card'>
               <CardGroup className='thdRow-CG'>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src="assets/icon1.png" />
+                <img src="assets/icon2.png" />
+                <img src="assets/icon3.png" />
+                <img src="assets/icon4.png" />
+                <img src="assets/icon5.png" />
               </CardGroup>
             </Carousel.Item>
           </Carousel>
