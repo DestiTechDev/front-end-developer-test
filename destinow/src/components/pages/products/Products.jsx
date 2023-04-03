@@ -35,9 +35,9 @@ function Products() {
                 <hr/>
                 <div className="prodDivImg">
                     <Slide direction={'left'}><img src="./assets/img1.png" className='img' /></Slide>
-                    <Slide direction={'right'}><img src="./assets/img2.png" className='img' /></Slide>
+                    <Slide direction={'left'}><img src="./assets/img2.png" className='img' /></Slide>
                     <Slide direction={'left'}><img src="./assets/img3.png" className='img' /></Slide>
-                    <Slide direction={'right'}><img src="./assets/img4.png" className='img' /></Slide>
+                    <Slide direction={'left'}><img src="./assets/img4.png" className='img' /></Slide>
                 </div>
             </Row>
         </Container>

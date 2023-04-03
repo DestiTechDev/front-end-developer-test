@@ -73,7 +73,21 @@ function Insurance() {
       </Fade>
 
       <Row>
-
+      <Fade duration={2500}>
+        <Row className='thdRow'>
+          <Carousel variant="dark" className='thdRow-carousel'>
+            <Carousel.Item className='thdRow-card'>
+              <CardGroup className='thdRow-CG'>
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </CardGroup>
+            </Carousel.Item>
+          </Carousel>
+        </Row>
+      </Fade>
       </Row>
     </Container>
   );
