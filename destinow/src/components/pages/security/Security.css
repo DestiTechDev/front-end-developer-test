@@ -167,8 +167,10 @@
       margin-bottom: 5px!important;
     }
 
-
-  
+    .card-body {
+      border-bottom: none!important;
+    }
+    
     .thdRow-carousel {
       width: 100%!important;
       margin: auto;
