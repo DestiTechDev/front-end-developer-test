@@ -1,6 +1,6 @@
 # [Teste de desenvolvedor Front-End DestiTech](https://front-end-developer-test-ochre.vercel.app/) 💻🌎
 
-<p>Projeto front-end desenvolvido em React, com a utilização do Bootstrap para construção do layout, para a empresa DestiTech. O objetivo do projeto é criar uma plataforma de gestão online para empresas de turismo, com foco em processos automatizados e otimização de tempo. O desenvolvimento web é uma parte essencial do projeto, e a equipe utilizou técnicas avançadas de front-end para construir a plataforma. O resultado é um projeto moderno e funcional que utiliza as mais recentes tecnologias e práticas de desenvolvimento.</p>
+<p>Projeto front-end desenvolvido em React, com a utilização do Bootstrap para construção do layout, para a empresa DestiTech. O objetivo do projeto é criar uma plataforma de gestão online para empresas de turismo, com foco em processos automatizados e otimização de tempo. O desenvolvimento web é uma parte essencial do projeto, e foram utilizadas técnicas avançadas de front-end para construir a aplicação proposta. O resultado é um projeto moderno e funcional que utiliza as mais recentes tecnologias e práticas de desenvolvimento.</p>
 
 
 <p align="center">
