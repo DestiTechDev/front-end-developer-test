@@ -26,7 +26,7 @@
 
 
 .meu-navbar {
-    width: 100.7%;
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     top: 0;
     z-index: 100;
     font-family: var(--font);
-    
+
     -webkit-animation: slide-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     background: rgba(255, 255, 255, 0.392);

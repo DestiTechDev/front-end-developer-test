@@ -81,10 +81,11 @@
 
 
 .thdRow {
-  width: 100%;
   background-color: #F7F7F7;
   padding-top: 5%;
   padding-bottom: 5%;
+  margin-right: 0!important;
+  width: 103.39;
 }
 
 .thdRow-carousel {
