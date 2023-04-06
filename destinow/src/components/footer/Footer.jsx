@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { BsYoutube, BsLinkedin } from 'react-icons/bs';
 import './Footer.css'
 
 const Footer = () => {
@@ -47,11 +48,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright">
-                <p>&copy; 2023 Nome da Empresa. Todos os direitos reservados.</p>
+                <p>&copy; 2023. Todos os direitos reservados.</p>
                 <div className="social-icons">
                     <a href="#"><FaFacebook /></a>
                     <a href="#"><FaTwitter /></a>
+                    <a href="#"><BsYoutube /></a>
                     <a href="#"><FaInstagram /></a>
+                    <a href="#"><BsLinkedin /></a>
                 </div>
             </div>
         </footer>
