@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    <img src="assets/gif.gif" alt="Descrição do GIF">
+    <img src="https://github.com/brwnalima/front-end-developer-test/blob/main/destinow/public/assets/gif.gif?raw=true" alt="Descrição do GIF">
 </p>
 
 <hr>
