@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    ![Uploading Destinow - Google Chrome 2023-04-06 19-05-37.gif…]()
+    <img src="assets/gif.gif" alt="Descrição do GIF">
 </p>
 
 <hr>
