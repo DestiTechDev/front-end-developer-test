@@ -28,7 +28,7 @@ function Insurance() {
   return (
     <Container className='container-ins' fluid>
 
-      <Slide direction='left'>
+      <Fade>
         <Row className="firstRow">
           <div className="firstRow-div">
             <TbHomeRibbon size={iconSize} color='#4688F2' />
@@ -52,7 +52,7 @@ function Insurance() {
             </div>
           </div>
         </Row>
-      </Slide>
+      </Fade>
 
       <Fade duration={2500}>
         <Row className='SndRow'>
