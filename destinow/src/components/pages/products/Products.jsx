@@ -5,7 +5,7 @@ import './Products.css'
 import Carousel from 'react-bootstrap/Carousel';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Cards from '../../card/Card';
-import { Slide, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function Products() {
 
@@ -33,12 +33,12 @@ function Products() {
             <Row className="prod-row">
                 <h1 className='titulo-dois'>NOSSAS ATIVIDADES</h1>
                 <hr/>
-                <Slide direction='left'><div className="prodDivImg">
+                <Fade><div className="prodDivImg">
                     <img src="./assets/img1.png" className='img' />
                     <img src="./assets/img2.png" className='img' />
                     <img src="./assets/img3.png" className='img' />
                     <img src="./assets/img4.png" className='img' />
-                </div></Slide>
+                </div></Fade>
             </Row>
         </Container>
     );
