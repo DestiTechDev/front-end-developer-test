@@ -8,7 +8,7 @@ import './Security.css'
 import Carousel from 'react-bootstrap/Carousel';
 import CardIns from '../../card/CardIns';
 import CardGroup from 'react-bootstrap/CardGroup';
-import { Slide, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function Insurance() {
 
@@ -58,7 +58,7 @@ function Insurance() {
         <Row className='SndRow'>
           <div className="title">
             <h3 className='SndRow-title'>BLOG</h3>
-            <hr/>
+            <hr />
           </div>
           <Carousel variant="dark" className='SndRow-carousel'>
             <Carousel.Item className='SndRow-card'>
@@ -72,8 +72,7 @@ function Insurance() {
         </Row>
       </Fade>
 
-      <Row>
-      <Fade duration={2500}>
+      <Fade>
         <Row className='thdRow'>
           <Carousel variant="dark" className='thdRow-carousel'>
             <Carousel.Item className='thdRow-card'>
@@ -88,7 +87,8 @@ function Insurance() {
           </Carousel>
         </Row>
       </Fade>
-      </Row>
+
+
     </Container>
   );
 }
