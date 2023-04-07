@@ -1,0 +1,186 @@
+.container-ins {
+  padding-right: 0 !important;
+}
+
+.firstRow {
+  padding-top: 5%;
+  width: 80%;
+  margin-left: 13% !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.firstRow-div {
+  flex-basis: 33.33%;
+
+}
+
+.firstRow-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+
+}
+
+.rowFirstCard {
+  text-align: left;
+}
+
+.rowFirstCard p {
+  width: 70%;
+  font-size: 0.75rem;
+}
+
+.rowFirstCard h6 {
+  font-size: 1rem;
+}
+
+
+.SndRow {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.SndRow h3 {
+  text-align: center;
+}
+
+.title hr {
+  width: 3% !important;
+  margin: auto !important;
+  padding: 2px;
+  background-color: #4688F2 !important;
+  opacity: 10 !important;
+  border: none !important;
+  margin-top: 20px!important;
+  margin-bottom: 50px !important;
+}
+
+.SndRow-carousel {
+  width: 90% !important;
+  margin: auto;
+}
+
+.SndRow-card {
+  padding: 100px;
+  padding-top: 10px;
+}
+
+.SndRow-CG {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+  margin-left: 0px !important;
+}
+
+
+.thdRow {
+  background-color: #F7F7F7;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 0!important;
+  width: 103.39;
+}
+
+.thdRow-carousel {
+  width: 95%!important;
+  margin: auto;
+}
+
+.thdRow-CG {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.thdRow-CG img {
+  width: 150px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .firstRow {
+    flex-wrap: wrap;
+    margin-left: 10% !important;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .rowFirstCard p {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .rowFirstCard h6 {
+    width: 120%;
+    font-size: 1rem;
+  }
+
+  .SndRow-title::after {
+    display: none;
+  }
+
+  .SndRow-carousel {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .SndRow-card {
+    padding: 70px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    .firstRow {
+      flex-wrap: wrap;
+      padding-top: 15%;
+    }
+
+    .rowFirstCard h6 {
+      width: 100%;
+    }
+
+    .SndRow-title::after {
+      display: none;
+    }
+
+    .SndRow-carousel {
+      width: 100% !important;
+      margin: auto;
+      padding: 1px !important;
+    }
+
+    .carousel-dark .carousel-control-next-icon,
+    .carousel-dark .carousel-control-prev-icon {
+      display: none;
+    }
+
+    .title hr {
+      width: 8% !important;
+      margin-bottom: 5px!important;
+    }
+
+    .thdRow-carousel {
+      width: 100%!important;
+      margin: auto;
+    }
+    
+    .thdRow-CG {
+      gap: 20px;
+    }
+    
+    .thdRow-CG img {
+      width: 130px;
+      height: 80px;
+    }
+
+  }
+}

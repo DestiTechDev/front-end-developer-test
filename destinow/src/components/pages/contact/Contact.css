@@ -1,0 +1,22 @@
+.contact-container {
+    background-image: url('/assets/rio40graus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .contact-container {
+        margin-top: 30px;
+    }
+
+    @media only screen and (max-width: 758px) {
+
+        .contact-container {
+            margin-top: 50px;
+        }    
+    }
+}

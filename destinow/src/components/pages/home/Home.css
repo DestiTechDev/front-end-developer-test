@@ -1,0 +1,110 @@
+.home-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.home-row {
+    margin-right: 0!important;
+}
+
+.home-col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.home-car-item {
+    height: 60vh;
+}
+
+.home-select {
+    width: 70%;
+    height: 5.625rem;
+    background: white;
+    border-radius: 0.625rem;
+    box-shadow: 0.1875rem 0.125rem 0.5625rem rgba(0, 0, 0, 0.323);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: auto;
+
+    position: relative;
+    top: -3.125rem;
+    margin-bottom: -3.125rem;
+    z-index: 1;
+}
+
+select {
+    cursor: pointer !important;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 1.25rem;
+    width: 11.25rem;
+    background-color: #bbbbbb35;
+    border: none;
+}
+
+@media only screen and (max-width: 64rem) {
+
+
+    .home-car-item {
+        height: auto;
+    }
+
+    .home-carrossel {
+        width: 100%;
+
+    }
+
+    .home-select {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 10;
+        height: 150%;
+        top: -5.625rem;
+        margin-bottom: -2.1875rem;
+
+    }
+
+    .home-select div {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    select {
+        width: 100%;
+        padding-left: 0.625rem;
+    }
+
+    Button {
+        width: 100%;
+    }
+
+
+    @media only screen and (max-width: 47.375rem) {
+
+        .home-car-item img {
+            width: 190% !important;
+        }
+
+        .home-select {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 10;
+            height: 170%;
+            top: -60px;
+        }
+
+        select {
+            width: 100%;
+            padding-left: 0.625rem;
+        }
+
+        Button {
+            width: 100%;
+        }
+    }
+}
