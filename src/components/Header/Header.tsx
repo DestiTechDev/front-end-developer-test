@@ -61,7 +61,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="bg-white w-full h-full">
+    <nav className="bg-white w-full">
       {!isMobile && (
         <div className=" bg-blue-950 h-[40px]">
           <div className="max-w-screen-xl flex flex-wrap justify-end mx-auto pt-2">
