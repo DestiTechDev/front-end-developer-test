@@ -5,6 +5,7 @@ import Carousel from './components/Carousel/Carousel'
 import TravelCarousel from './components/TravelCarousel/TravelCarousel'
 import ActivityGallery from './components/ActivityGallery/ActivityGallery'
 import ContactUs from './components/ContactUs/ContactUs'
+import Infos from './components/Infos/Infos'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       </div>
       <ActivityGallery/>
       <ContactUs/>
+      <Infos/>
     </div>
   )
 }

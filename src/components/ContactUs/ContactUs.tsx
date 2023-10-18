@@ -14,7 +14,7 @@ const ContactUs = () => {
 
   return (
     <div
-      className="max-w-screen-xl mt-8 bg-black flex justify-center items-center"
+      className="mt-8 bg-black flex justify-center "
       style={{ backgroundImage: `url(${image1})` }}
     >
       <div className="p-6 mt-16 mb-16 w-3/5 bg-white shadow-md">
