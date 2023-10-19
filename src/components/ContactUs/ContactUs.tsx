@@ -17,9 +17,9 @@ const ContactUs = () => {
       className="mt-8 bg-black flex justify-center "
       style={{ backgroundImage: `url(${image1})` }}
     >
-      <div className="p-6 mt-16 mb-16 w-3/5 bg-white shadow-md">
+      <div className="p-6 mt-16 mb-16 lg:w-2/5 mx-4 bg-white shadow-md">
         <div className="flex justify-center flex-col items-center mb-8">
-          <h2 className="uppercase font-bold p-3 text-xl">
+          <h2 className="uppercase font-bold p-3 text-2xl">
             Entre em contato conosco
           </h2>
           <div className="border-b border-blue-500 w-8 border-2"></div>
@@ -62,12 +62,12 @@ const ContactUs = () => {
               value={mensagem}
               placeholder="Escreva sua mensagem (opcional)"
               onChange={(e) => setMensagem(e.target.value)}
-              className="w-full p-2 border rounded bg-slate-50"
+              className="w-full p-2 border rounded bg-slate-50 h-32"
             />
           </div>
           <button
             type="submit"
-            className="mb-4 w-full bg-blue-500 text-white p-2 rounded-sm hover:bg-blue-600"
+            className="p-4 mb-4 w-full bg-blue-500 text-white rounded-sm hover:bg-blue-600"
           >
             ENVIAR MENSAGEM
           </button>

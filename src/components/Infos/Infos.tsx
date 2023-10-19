@@ -34,7 +34,7 @@ const Infos = () =>{
         {infos.map((info) => (
           <div
             key={info.id}
-            className="flex flex-col items-center sm:flex-row lg:flex-row sm:items-center lg:items-center mx-4 my-4"
+            className="w-[320px] flex flex-col items-center sm:flex-row lg:flex-row sm:items-center lg:items-center mx-12 my-4"
           >
             <img src={info.thumb} width={70} height={70} alt={`brand-${info.id}`} />
             <div className="w-[300px] mt-2 lg:ml-2 sm:ml-0 lg:text-left sm:text-center">

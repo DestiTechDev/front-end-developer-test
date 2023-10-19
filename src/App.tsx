@@ -18,20 +18,20 @@ const App = () => {
 
 
       <div className='flex justify-center flex-col items-center mt-8'>
-        <h2 className="uppercase font-bold p-3 text-xl">nossos pacotes</h2>
+        <h2 className="uppercase font-bold p-3 text-2xl">nossos pacotes</h2>
         <div className='border-b border-blue-500 w-8 border-2'></div>
       </div>
       <TravelCarousel/>
 
       <div className='flex justify-center flex-col items-center'>
-        <h2 className="uppercase font-bold p-3 text-xl">nossas atividades</h2>
+        <h2 className="uppercase font-bold p-3 text-2xl">nossas atividades</h2>
         <div className='border-b border-blue-500 w-8 border-2'></div>
       </div>
       <ActivityGallery/>
       <ContactUs/>
       <Infos/>
       <div className='flex justify-center flex-col items-center'>
-        <h2 className="uppercase font-bold p-3 text-xl">blog</h2>
+        <h2 className="uppercase font-bold p-3 text-2xl">blog</h2>
         <div className='border-b border-blue-500 w-8 border-2'></div>
       </div>
       <BlogCarousel/>

@@ -32,11 +32,11 @@ const Footer = () => {
   // when is larg screen
   const checkWindowSize = () => {
     setIsMobile(window.innerWidth < 768);
-    if(window.innerWidth < 768){
-      setIsCollapsedHelp(false)
-      setIsCollapsedEmpresa(false)
-      setIsCollapsedSuporte(false)
-      setIsCollapsedNossoTrabalho(false)
+    if (window.innerWidth < 768) {
+      setIsCollapsedHelp(false);
+      setIsCollapsedEmpresa(false);
+      setIsCollapsedSuporte(false);
+      setIsCollapsedNossoTrabalho(false);
     }
   };
 
@@ -48,45 +48,38 @@ const Footer = () => {
     };
   }, []);
 
-
-
-
   return (
     <div className="bg-[#192945] text-white">
       <div className="p-8 pt-12 flex justify-between w-full max-w-screen-xl mx-auto py-8 flex-col md:flex-row">
         <div className="text-left">
-          <div className="flex items-center ">
-            <h3
-              className="mb-4 uppercase font-bold"
-            >
-              Precisa de ajuda?
-            </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="mb-4 uppercase font-bold">Precisa de ajuda?</h3>
 
-            <span 
-                   onClick={toggleCollapseHelp}
-            className="lg:hidden md:hidden sm:inline-flex cursor-pointer inline-flex justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 ">
-              
-              {isCollapsedHelp ?
-              <svg
-                className="w-[20px] h-[20px] text-white transform rotate-90"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path stroke="currentColor" d="M5 1 1 5l4 4" />
-              </svg>
-              :
-              <svg
-              className="w-[20px] h-[20px] text-white transform rotate-90"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
+            <span
+              onClick={toggleCollapseHelp}
+              className="mr-2 lg:hidden md:hidden sm:inline-flex cursor-pointer inline-flex justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 "
             >
-              <path stroke="currentColor" d="m1 9 4-4-4-4" />
-            </svg>
-}
+              {isCollapsedHelp ? (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="M5 1 1 5l4 4" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="m1 9 4-4-4-4" />
+                </svg>
+              )}
             </span>
           </div>
 
@@ -107,38 +100,34 @@ const Footer = () => {
         </div>
 
         <ul className={`text-left capitalize mt-2`}>
-        <div className="flex items-center">
-            <h3
-              className="mb-4 uppercase font-bold"
-            >
-              Empresa
-            </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="mb-4 uppercase font-bold">Empresa</h3>
 
-            <span 
-                   onClick={toggleCollapseEmpresa}
-            className="lg:hidden md:hidden sm:inline-flex  cursor-pointer justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
-              
-              {isCollapsedEmpresa?
-              <svg
-                className="w-[20px] h-[20px] text-white transform rotate-90"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path stroke="currentColor" d="M5 1 1 5l4 4" />
-              </svg>
-              :
-              <svg
-              className="w-[20px] h-[20px] text-white transform rotate-90"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
+            <span
+              onClick={toggleCollapseEmpresa}
+              className="lg:hidden md:hidden sm:inline-flex  cursor-pointer justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60"
             >
-              <path stroke="currentColor" d="m1 9 4-4-4-4" />
-            </svg>
-}
+              {isCollapsedEmpresa ? (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="M5 1 1 5l4 4" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="m1 9 4-4-4-4" />
+                </svg>
+              )}
             </span>
           </div>
           <div className={`${isCollapsedEmpresa ? "hidden" : "block"}`}>
@@ -159,38 +148,34 @@ const Footer = () => {
         </ul>
 
         <ul className={`text-left capitalize mt-2`}>
-        <div className="flex items-center">
-            <h3
-              className="mb-4 uppercase font-bold"
-            >
-             Suporte
-            </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="mb-4 uppercase font-bold">Suporte</h3>
 
-            <span 
-                   onClick={toggleCollapseSuporte}
-                   className="cursor-pointer lg:hidden md:hidden sm:inline-flex justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
-              
-              {isCollapsedSuporte ?
-              <svg
-                className="w-[20px] h-[20px] text-white transform rotate-90"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path stroke="currentColor" d="M5 1 1 5l4 4" />
-              </svg>
-              :
-              <svg
-              className="w-[20px] h-[20px] text-white transform rotate-90"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
+            <span
+              onClick={toggleCollapseSuporte}
+              className="cursor-pointer lg:hidden md:hidden sm:inline-flex justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60"
             >
-              <path stroke="currentColor" d="m1 9 4-4-4-4" />
-            </svg>
-}
+              {isCollapsedSuporte ? (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="M5 1 1 5l4 4" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="m1 9 4-4-4-4" />
+                </svg>
+              )}
             </span>
           </div>
 
@@ -212,38 +197,34 @@ const Footer = () => {
         </ul>
 
         <ul className={`text-left capitalize mt-2`}>
-        <div className="flex items-center">
-            <h3
-              className="mb-4 uppercase font-bold"
-            >
-              Nosso Trabalho
-            </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="mb-4 uppercase font-bold">Nosso Trabalho</h3>
 
-            <span 
-                   onClick={toggleCollapseNossoTrabalho}
-            className="cursor-pointer lg:hidden md:hidden sm:inline-flex  justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
-              
-              {isCollapsedNossoTrabalho ?
-              <svg
-                className="w-[20px] h-[20px] text-white transform rotate-90"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path stroke="currentColor" d="M5 1 1 5l4 4" />
-              </svg>
-              :
-              <svg
-              className="w-[20px] h-[20px] text-white transform rotate-90"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
+            <span
+              onClick={toggleCollapseNossoTrabalho}
+              className="cursor-pointer lg:hidden md:hidden sm:inline-flex  justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60"
             >
-              <path stroke="currentColor" d="m1 9 4-4-4-4" />
-            </svg>
-}
+              {isCollapsedNossoTrabalho ? (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="M5 1 1 5l4 4" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-[20px] h-[20px] text-white transform rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path stroke="currentColor" d="m1 9 4-4-4-4" />
+                </svg>
+              )}
             </span>
           </div>
 
@@ -267,56 +248,58 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="p-8 flex justify-between border-[#303F58] border-t ">
-        <p>© Copyright 2022</p>
+      <div className="p-8  border-[#303F58] border-t ">
+       <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between max-w-screen-xl mx-auto ">
+          <p className="order-2">© Copyright 2022</p>
 
-        <ul className="flex">
-          <li className="cursor-pointer mr-4">
-            <img
-              src={facebook}
-              width={24}
-              height={24}
-              style={{ filter: "invert(1)" }}
-              alt="Facebook"
-            />
-          </li>
-          <li className="cursor-pointer mr-4">
-            <img
-              src={twitter}
-              width={24}
-              height={24}
-              style={{ filter: "invert(1)" }}
-              alt="twitter"
-            />
-          </li>
-          <li className="cursor-pointer mr-4">
-            <img
-              src={youtube}
-              width={24}
-              height={24}
-              style={{ filter: "invert(1)" }}
-              alt="youtube"
-            />
-          </li>
-          <li className="cursor-pointer mr-4">
-            <img
-              src={instagram}
-              width={24}
-              height={24}
-              style={{ filter: "invert(1)" }}
-              alt="instagram"
-            />
-          </li>
-          <li className="cursor-pointer mr-4">
-            <img
-              src={linkedin}
-              width={24}
-              height={24}
-              style={{ filter: "invert(1)" }}
-              alt="linkedin"
-            />
-          </li>
-        </ul>
+          <ul className="flex order-1 lg:order-last sm:order-first mt-4 lg:mt-0 mb-4">
+            <li className="cursor-pointer mr-4">
+              <img
+                src={facebook}
+                width={24}
+                height={24}
+                style={{ filter: "invert(1)" }}
+                alt="Facebook"
+              />
+            </li>
+            <li className="cursor-pointer mr-4">
+              <img
+                src={twitter}
+                width={24}
+                height={24}
+                style={{ filter: "invert(1)" }}
+                alt="twitter"
+              />
+            </li>
+            <li className="cursor-pointer mr-4">
+              <img
+                src={youtube}
+                width={24}
+                height={24}
+                style={{ filter: "invert(1)" }}
+                alt="youtube"
+              />
+            </li>
+            <li className="cursor-pointer mr-4">
+              <img
+                src={instagram}
+                width={24}
+                height={24}
+                style={{ filter: "invert(1)" }}
+                alt="instagram"
+              />
+            </li>
+            <li className="cursor-pointer">
+              <img
+                src={linkedin}
+                width={24}
+                height={24}
+                style={{ filter: "invert(1)" }}
+                alt="linkedin"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

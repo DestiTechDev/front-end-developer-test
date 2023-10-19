@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import image1 from "../../images/blog1.png";
 import image2 from "../../images/blog2.png";
 import image3 from "../../images/blog3.png";
@@ -33,8 +33,6 @@ const news = [
 
 const BlogCarousel: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [, setIsMobile] = useState(window.innerWidth < 768);
-
 
   const cardWidth = 400;
   const totalSlides = news.length;
@@ -48,24 +46,13 @@ const BlogCarousel: React.FC = () => {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
   };
 
-  const checkWindowSize = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  // Event listener to get windows size
-  useEffect(() => {
-    window.addEventListener("resize", checkWindowSize);
-    return () => {
-      window.removeEventListener("resize", checkWindowSize);
-    };
-  }, []);
 
 
   return (
     <div className="w-full max-w-screen-xl mx-auto py-8">
     <div className="flex items-center">
 
-      <button onClick={prev} className={`${currentSlide === 0? 'invisible': 'visible'} px-4 py-2`}>
+      <button onClick={prev} className={`px-4 py-2`}>
       <span className="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 ">
           <svg
             className="w-[20px] h-[20px] text-black "
@@ -98,7 +85,7 @@ const BlogCarousel: React.FC = () => {
         </div>
       </div>
 
-      <button onClick={next} className={`${currentSlide === news.length - 1? 'invisible': 'visible'} px-4 py-2`}>
+      <button onClick={next} className={`px-4 py-2`}>
       <span className="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 ">
           <svg
             className="w-[20px] h-[20px] text-black "
