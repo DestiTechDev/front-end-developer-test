@@ -1,10 +1,15 @@
 import React from 'react'
+import SubNavBar from './components/SubNavBar'
+import NavBar from './components/NavBar'
+import PhotoBanner from './components/PhotoBanner'
 
-function App () {
+function App() {
   return (
-    <div className="bg-primary w-full overflow-hidden">
-      <h1 className="text-secondary">App</h1>
-    </div>
+    <>
+      <SubNavBar />
+      <NavBar />
+      <PhotoBanner />
+    </>
   )
 }
 
