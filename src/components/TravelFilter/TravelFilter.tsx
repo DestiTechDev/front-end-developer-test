@@ -60,7 +60,7 @@ const TravelFilter = () => {
           PESQUISAR
         </button>
       </div>
-      <Modal isOpen={openModal} onClose={() => setOpenModal(!openModal)} title={"Informação relavante para minha contratação"} description={"Não implementei, pois acredito que por ser uma landing page, o filtro deveria ser direcionado para uma nova tela, e como não tinha no figma eu abstraí por achar que não era necessário."} />
+      <Modal isOpen={openModal} onClose={() => setOpenModal(!openModal)} title={"Informação relavante para minha contratação - Nunca te pedi nada ;)"} description={"Acabei não implementando pois acredito que por ser uma landing page, o filtro deveria ser direcionado para uma nova tela, e como não tinha no figma eu abstraí por achar que não era necessário."} />
       </div>
   );
 };
