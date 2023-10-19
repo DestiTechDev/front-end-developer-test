@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header/Header'
-import Carousel from './components/Carousel/Carousel'
+import Carousel from './components/Carousel/carousel'
 import TravelCarousel from './components/TravelCarousel/TravelCarousel'
 import ActivityGallery from './components/ActivityGallery/ActivityGallery'
 import ContactUs from './components/ContactUs/ContactUs'
