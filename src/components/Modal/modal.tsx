@@ -13,11 +13,11 @@ const Modal: React.FC<IModal> = ({ isOpen, onClose, title, description }) => {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center" 
+    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center " 
          style={{zIndex: 500000}}
          onClick={onClose}>
       <div className="bg-black bg-opacity-50 w-full h-full fixed"></div>
-      <div className="bg-white p-4 rounded shadow-md w-2/5 h-2/5  text-left px-8 mt-8" style={{zIndex: 500000}}>
+      <div className="bg-white py-20 rounded shadow-md mx-8 text-left px-8 mt-8" style={{zIndex: 500000}}>
         <h2 className="font-bold mb-4 text-left text-3xl mt-4">{title}</h2>
         <p className="text-gray-700 text-2xl">{description}</p>
       </div>
