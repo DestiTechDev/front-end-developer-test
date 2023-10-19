@@ -3,6 +3,7 @@ import image1 from "../../images/Rectangle22.png";
 import image2 from "../../images/Rectangle24.png";
 import image3 from "../../images/Rectangle24_(1).png";
 import locationIcon from "../../images/location.png";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const travels = [
   {
@@ -90,6 +91,8 @@ const Carousel: React.FC = () => {
   };
 
   return (
+    <>
+    <SectionTitle title="Nossos pacotes" />
     <div className="max-w-screen-xl mx-auto py-8">
       <div className="flex items-center">
         <button onClick={prev} className={``}>
@@ -175,6 +178,7 @@ const Carousel: React.FC = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

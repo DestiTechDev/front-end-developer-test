@@ -3,6 +3,7 @@ import image1 from "../../images/Rectangle-act.png"
 import image2 from "../../images/Rectangle_24_act.png";
 import image3 from "../../images/Rectangle_25_act.png";
 import image4 from "../../images/Rectangle_26_act.png";
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const activities = [
     {
@@ -26,6 +27,8 @@ const activities = [
 
 const ActivityGallery = () =>{
 return(
+  <>
+  <SectionTitle title="Nossas atividades"/>
    <div className='max-w-screen-xl mx-auto py-8 px-8'>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center'>
             {
@@ -35,6 +38,7 @@ return(
             }
         </div>
    </div>
+   </>
 )
 }
 

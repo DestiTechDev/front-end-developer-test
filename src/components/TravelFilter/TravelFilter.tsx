@@ -5,7 +5,7 @@ const TravelFilter = () => {
   return (
     <div className="mx-4">
       <div className="mx-auto max-w-screen-xl m-8 p-8 bg-white rounded-lg shadow-md relative bottom-[100px] grid grid-cols-1 lg:grid-cols-5 text-[#707070]">
-        <div className="relative mx-4 my-4">
+        <div className="relative mx-4 my-4" >
           <FaMap
             color="#4688F2"
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
@@ -53,7 +53,7 @@ const TravelFilter = () => {
           </select>
         </div>
 
-        <button className="mx-4  my-4 bg-[#192945] text-white h-16 rounded-md">
+        <button className="mx-4  my-4 bg-[#192945] hover:bg-[#121d31] text-white h-16 rounded-md">
           PESQUISAR
         </button>
       </div>
