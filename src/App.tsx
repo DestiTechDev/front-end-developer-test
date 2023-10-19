@@ -8,6 +8,7 @@ import ContactUs from './components/ContactUs/ContactUs'
 import Infos from './components/Infos/Infos'
 import BlogCarousel from './components/BlogCarousel/BlogCarousel'
 import Footer from './components/Footer/Footer'
+import Customers from './components/Customers/Customers'
 
 const App = () => {
   return (
@@ -34,7 +35,7 @@ const App = () => {
         <div className='border-b border-blue-500 w-8 border-2'></div>
       </div>
       <BlogCarousel/>
-
+      <Customers/>
       <Footer/>
     </div>
   )
