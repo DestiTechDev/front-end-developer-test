@@ -49,11 +49,11 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-[#192945] text-white">
+    <div className="bg-[#192945] text-white text-[18px]">
       <div className="p-8 pt-12 flex justify-between w-full max-w-screen-xl mx-auto py-8 flex-col md:flex-row">
         <div className="text-left">
           <div className="flex items-center justify-between">
-            <h3 className="mb-4 uppercase font-bold">Precisa de ajuda?</h3>
+            <h3 className="mb-4 uppercase font-bold text-[20px]">Precisa de ajuda?</h3>
 
             <span
               onClick={toggleCollapseHelp}
@@ -101,7 +101,7 @@ const Footer = () => {
 
         <ul className={`text-left capitalize mt-2`}>
           <div className="flex items-center justify-between">
-            <h3 className="mb-4 uppercase font-bold">Empresa</h3>
+            <h3 className="mb-4 uppercase font-bold text-[20px]">Empresa</h3>
 
             <span
               onClick={toggleCollapseEmpresa}
@@ -149,7 +149,7 @@ const Footer = () => {
 
         <ul className={`text-left capitalize mt-2`}>
           <div className="flex items-center justify-between">
-            <h3 className="mb-4 uppercase font-bold">Suporte</h3>
+            <h3 className="mb-4 uppercase font-bold text-[20px]">Suporte</h3>
 
             <span
               onClick={toggleCollapseSuporte}
@@ -198,7 +198,7 @@ const Footer = () => {
 
         <ul className={`text-left capitalize mt-2`}>
           <div className="flex items-center justify-between">
-            <h3 className="mb-4 uppercase font-bold">Nosso Trabalho</h3>
+            <h3 className="mb-4 uppercase font-bold text-[20px]">Nosso Trabalho</h3>
 
             <span
               onClick={toggleCollapseNossoTrabalho}

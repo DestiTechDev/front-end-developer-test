@@ -124,10 +124,10 @@ const Carousel: React.FC = () => {
                 <img src={travel.thumb} alt="" className="w-full" />
                 <div className="text-left">
                   <div className="p-4 pb-8">
-                    <p className="font-bold mb-2">{travel.title}</p>
-                    <p className="mb-4">{travel.description}</p>
+                    <p className="font-bold mb-2 text-[20px]">{travel.title}</p>
+                    <p className="mb-4 text-[14px]">{travel.description}</p>
 
-                    <ul className="list-disc ml-16 mb-8">
+                    <ul className="list-disc ml-16 mb-8 text-[12px]">
                       {travel.tags.map((tg, index) => (
                         <li key={index}>{tg}</li>
                       ))}
@@ -143,11 +143,11 @@ const Carousel: React.FC = () => {
                             width={12}
                             height={15}
                           />
-                          <p className="ml-2 text-xs font-bold">
+                          <p className="ml-2 text-[12px]font-bold">
                             {travel.country}
                           </p>
                         </div>
-                        <p className="text-2xl font-bold text-blue-500">
+                        <p className="text-2xl font-bold text-[32px] text-[#4688F2]">
                           R$ {travel.price}
                         </p>
                       </div>

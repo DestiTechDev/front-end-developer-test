@@ -85,7 +85,7 @@ const Header = () => {
               {menuTopOptions.map((menuTopOption, index) => (
                 <li
                   key={menuTopOption.id}
-                  className={`text-white text-sm ml-4 border-solid border-white ${
+                  className={`text-white text-[14px] ml-4 border-solid border-white ${
                     index === menuTopOptions.length - 1 ? "" : "border-r"
                   }`}
                 >
@@ -135,7 +135,7 @@ const Header = () => {
             {reversedMenu.map((menuOption, index) => (
               <li
                 key={menuOption.id}
-                className={`border-gray-100 border-solid ml-4 rounded-full ${
+                className={`border-gray-100 border-solid ml-4 rounded-full  text-[16px]  ${
                   index === reversedMenu.length - 1
                     ? "bg-blue-400 text-white hover:bg-blue-500 min-w-[150px]"
                     : "bg-white"

@@ -75,9 +75,9 @@ const BlogCarousel: React.FC = () => {
               <img src={travel.thumb} alt="" className="w-full" />
               <div className="text-left">
                 <div className="p-4">
-                <p className="mb-2 text-blue-400">{`${travel.createdAt} | ${travel.commentAccount} comentários         `}</p>
-                  <p className="font-bold mb-2 text-lg capitalize">{travel.title}</p>
-                  <p>{travel.description}</p>
+                  <p className="mb-2 text-[#4688F2] text-[14px]">{`${travel.createdAt} | ${travel.commentAccount} comentários         `}</p>
+                  <p className="font-bold mb-2 text-lg capitalize text-[20px]">{travel.title}</p>
+                  <p className="text-[14px]">{travel.description}</p>
                 </div>
               </div>
             </div>

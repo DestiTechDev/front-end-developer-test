@@ -21,7 +21,7 @@ const Customers: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div className="bg-[#F7F7F7] py-8 mt-16">
       <div className="flex mt-8 mb-14 justify-center max-w-screen-xl mx-auto ">
         <button onClick={handlePrev} className={`px-4 py-2`}>
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 ">
