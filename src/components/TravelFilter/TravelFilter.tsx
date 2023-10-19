@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHiking, FaMap, FaCalendar, FaDollarSign } from "react-icons/fa";
+import Modal from "../Modal/modal";
 
 const TravelFilter = () => {
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <div className="mx-4">
       <div className="mx-auto max-w-screen-xl m-8 p-8 bg-white rounded-lg shadow-md relative bottom-[100px] grid grid-cols-1 lg:grid-cols-5 text-[#707070]">
@@ -53,11 +56,12 @@ const TravelFilter = () => {
           </select>
         </div>
 
-        <button className="mx-4  my-4 bg-[#192945] hover:bg-[#121d31] text-white h-16 rounded-md">
+        <button onClick={() => setOpenModal(!openModal)} className="mx-4  my-4 bg-[#192945] hover:bg-[#121d31] text-white h-16 rounded-md">
           PESQUISAR
         </button>
       </div>
-    </div>
+      <Modal isOpen={openModal} onClose={() => setOpenModal(!openModal)} title={"Informação relavante para minha contratação"} description={"Não implementei, pois acredito que por ser uma landing page, o filtro deveria ser direcionado para uma nova tela, e como não tinha no figma eu abstraí por achar que não era necessário."} />
+      </div>
   );
 };
 

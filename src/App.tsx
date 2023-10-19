@@ -14,7 +14,13 @@ import TravelFilter from './components/TravelFilter/TravelFilter'
 const App = () => {
   return (
     <div className="App">
+
+      {/* header */}
       <Header/>
+
+      {/* body */}
+
+      {/* section one */}
       <Carousel/>
       <TravelFilter/>
       <TravelCarousel/>
@@ -23,6 +29,8 @@ const App = () => {
       <Infos/>
       <BlogCarousel/>
       <Customers/>
+
+      {/* footer */}
       <Footer/>
     </div>
   )

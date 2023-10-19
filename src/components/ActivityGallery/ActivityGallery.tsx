@@ -25,21 +25,28 @@ const activities = [
   ];
   
 
-const ActivityGallery = () =>{
-return(
-  <>
-  <SectionTitle title="Nossas atividades"/>
-   <div className='max-w-screen-xl mx-auto py-8 px-8'>
+const ActivityGallery = () => {
+  return (
+    <>
+      <SectionTitle title="Nossas atividades"/>
+      <div className='max-w-screen-xl mx-auto py-8 px-8'>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center'>
-            {
-                activities.map(activity => (
-                    <img key={activity.id} src={activity.thumb} width={640} height={385}/>
-                ))
-            }
+          {
+            activities.map(activity => (
+              <div key={activity.id} className="relative overflow-hidden cursor-pointer">
+                <img
+                  src={activity.thumb}
+                  width={640}
+                  height={385}
+                  className="object-cover transform transition-transform hover:scale-110"
+                />
+              </div>
+            ))
+          }
         </div>
-   </div>
-   </>
-)
+      </div>
+    </>
+  )
 }
 
 export default ActivityGallery

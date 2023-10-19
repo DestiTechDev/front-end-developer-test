@@ -123,7 +123,7 @@ const Carousel: React.FC = () => {
               <div
                 key={travel.id}
                 style={{ minWidth: `${cardWidth}px` }}
-                className="ml-4 mr-4 relative shadow-md"
+                className="ml-4 mr-4 relative shadow-md cursor-pointer hover:shadow-lg"
               >
                 <img src={travel.thumb} alt="" className="w-full" />
                 <div className="text-left">
