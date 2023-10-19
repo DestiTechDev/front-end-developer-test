@@ -63,7 +63,7 @@ const Header = () => {
   return (
     <nav className="bg-white w-full">
       {!isMobile && (
-        <div className=" bg-blue-950 h-[40px]">
+        <div className=" bg-[#192945] h-[40px]">
           <div className="max-w-screen-xl flex flex-wrap justify-end mx-auto pt-2">
             <ul className="flex text-black">
               {menuTopOptions.map((menuTopOption, index) => (
