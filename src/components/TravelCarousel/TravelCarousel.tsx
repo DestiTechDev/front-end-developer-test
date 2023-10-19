@@ -109,10 +109,11 @@ const Carousel: React.FC = () => {
 
         <div className="overflow-hidden">
           <div
-            className="flex mb-8"
+            className="flex mb-8 "
             style={{
               width: `${totalWidth}px`,
               transform: `translateX(-${currentSlide * cardWidth}px)`,
+              transition: "transform 0.5s ease-in-out"
             }}
           >
             {travels.map((travel) => (

@@ -41,7 +41,7 @@ const Customers: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className={`mr-4 mb-4 transition-opacity duration-300 ${
+              className={`mr-4 mb-4 transition-opacity duration-800 ease-in-out ${
                 index === currentIndex ? "" : "opacity-30"
               }`}
             >
