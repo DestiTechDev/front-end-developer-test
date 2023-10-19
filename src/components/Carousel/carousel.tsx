@@ -54,8 +54,9 @@ const Carousel = () => {
           >
             <img
               src={images[imageIndex].url}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+              alt="someplace"
+              style={{ objectFit: 'cover' }}
             />
           </div>
       </div>

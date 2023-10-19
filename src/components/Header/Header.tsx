@@ -60,24 +60,36 @@ const Header = () => {
     };
   }, []);
 
+
+  // block scroll when modal opened
+  useEffect(() => {
+    if (openedMenu) {
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.body.style.overflow = 'auto'; 
+    }
+  
+    return () => {
+      document.body.style.overflow = 'auto'; 
+    };
+  }, [openedMenu]);
+  
+  
+
   return (
-    <nav className="bg-white w-full">
+    <nav className="bg-white w-full relative" style={{ zIndex: 1000 }}>
       {!isMobile && (
-        <div className=" bg-[#192945] h-[40px]">
+        <div className="bg-[#192945] h-[40px]">
           <div className="max-w-screen-xl flex flex-wrap justify-end mx-auto pt-2">
             <ul className="flex text-black">
               {menuTopOptions.map((menuTopOption, index) => (
                 <li
                   key={menuTopOption.id}
-                  className={`text-white text-sm ml-4 border-solid border-white  ${
+                  className={`text-white text-sm ml-4 border-solid border-white ${
                     index === menuTopOptions.length - 1 ? "" : "border-r"
                   }`}
                 >
-                  <a
-                    href={`#${menuTopOption.id}`}
-                    className="pl-4 pr-6"
-                    aria-current="page"
-                  >
+                  <a href={`#${menuTopOption.id}`} className="pl-4 pr-6" aria-current="page">
                     {menuTopOption.label}
                   </a>
                 </li>
@@ -86,17 +98,17 @@ const Header = () => {
           </div>
         </div>
       )}
-
+  
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center">
           <img src={logo} className="" alt="logo" width={205} height={36} />
         </a>
-
+  
         {isMobile ? (
           <button
             data-collapse-toggle="navbar-hamburger"
             type="button"
-            className="inline-flex items-center justify-center p-2 w-10 h-10 ml-3 text-sm text-black rounded-lg hover:bg-gray-100  focus:ring-gray-200 dark:text-black dark:hover:bg-gray-100 "
+            className="inline-flex items-center justify-center p-2 w-10 h-10 ml-3 text-sm text-black rounded-lg hover:bg-gray-100 focus:ring-gray-200 dark:text-black dark:hover:bg-gray-100"
             aria-controls="navbar-hamburger"
             aria-expanded="false"
             onClick={() => setOpenedMenu(!openedMenu)}
@@ -119,7 +131,7 @@ const Header = () => {
             </svg>
           </button>
         ) : (
-          <ul className="flex  text-black uppercase font-bold">
+          <ul className="flex text-black uppercase font-bold">
             {reversedMenu.map((menuOption, index) => (
               <li
                 key={menuOption.id}
@@ -129,11 +141,7 @@ const Header = () => {
                     : "bg-white"
                 }  p-2 pr-0`}
               >
-                <a
-                  href={`#${menuOption.id}`}
-                  className="block py-2 pl-3 pr-4 "
-                  aria-current="page"
-                >
+                <a href={`#${menuOption.id}`} className="block py-2 pl-3 pr-4" aria-current="page">
                   {menuOption.label}
                 </a>
               </li>
@@ -141,21 +149,18 @@ const Header = () => {
           </ul>
         )}
       </div>
-
+  
       <div
-        className={`bg-black bg-opacity-60 h-full relative bottom-20 ${
+        className={`bg-black bg-opacity-60 h-screen w-full absolute top-0 left-0 ${
           openedMenu ? "" : "hidden"
         }`}
       >
-        <div
-          className={`w-4/5 absolute top-0 right-0 bottom-0 bg-white text-left`}
-          id="navbar-hamburger"
-        >
+        <div className="w-4/5 absolute top-0 right-0 bottom-0 bg-white text-left" id="navbar-hamburger">
           <div className="text-right mr-4 mt-6">
             <button
               data-collapse-toggle="navbar-hamburger"
               type="button"
-              className=" p-2 w-10 h-10 text-sm text-black rounded-lg hover:bg-gray-100  focus:ring-gray-200 dark:text-black dark:hover:bg-gray-100 "
+              className="relative bottom-2 p-2 w-10 h-10 text-sm text-black rounded-lg hover:bg-gray-100 focus:ring-gray-200 dark:text-black dark:hover:bg-gray-100"
               aria-controls="navbar-hamburger"
               aria-expanded="false"
               onClick={() => setOpenedMenu(!openedMenu)}
@@ -168,28 +173,18 @@ const Header = () => {
                 viewBox="0 0 20 20"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-          <ul className="flex flex-col text-black uppercase font-bold p-4 pr-0">
+          <ul className="flex flex-col text-black uppercase font-bold p-4 pr-0 h-full">
             {menuOptions.map((menuOption, index) => (
               <li
                 key={menuOption.id}
-                className={`border-gray-100 border-solid ${
-                  index === menuOptions.length - 1 ? "" : "border-b"
-                }  p-2 pr-0`}
+                className={`border-gray-100 border-solid ${index === menuOptions.length - 1 ? "" : "border-b"
+                } p-2 pr-0`}
               >
-                <a
-                  href={`#${menuOption.id}`}
-                  className="block py-2 pl-3 pr-4 "
-                  aria-current="page"
-                >
+                <a href={`#${menuOption.id}`} className="block py-2 pl-3 pr-4" aria-current="page">
                   {menuOption.label}
                 </a>
               </li>
@@ -199,6 +194,7 @@ const Header = () => {
       </div>
     </nav>
   );
+  
 };
 
 export default Header;
