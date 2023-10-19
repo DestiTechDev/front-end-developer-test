@@ -1,6 +1,6 @@
 # Excursion Site
 
-![excursion_site](https://github.com/brunnogpcosta/front-end-developer-test/assets/49787374/399b2580-ed27-4214-bbe4-88d2c7358f55)
+![demo](https://github.com/brunnogpcosta/front-end-developer-test/assets/49787374/4b58f9ef-0567-4def-a6e9-5d11e43dfb03)
 
 
 This project is part of a technical evaluation for the junior front-end position.
@@ -13,7 +13,7 @@ This project is part of a technical evaluation for the junior front-end position
 - Coding Standards
 
 ### Should-Have
-- Bootstrap or Tailwind (optional CSS frameworks)
+- Tailwind
 - SEO (Search Engine Optimization)
 - Optimizations for better performance
 
