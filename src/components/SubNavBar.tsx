@@ -1,6 +1,6 @@
-function SubNavBar () {
+function SubNavBar() {
   return (
-    <div className="bg-primary w-full h-10 flex items-center justify-end">
+    <div className="bg-primary w-screen h-10 flex items-center justify-end">
       <div className="flex justify-between w-[459px] mx-72">
         <p className="text-sm text-white hover:text-secondary">tour.support@gmail.com</p>
         <p className="text-sm text-white">|</p>
