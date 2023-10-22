@@ -1,6 +1,7 @@
 import './App.css'
 import NavbarTab from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
+import Packages from "./components/packages/Packages";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <NavbarTab/>
       <Header/>
+      <Packages/>
     </div>
   )
 }
