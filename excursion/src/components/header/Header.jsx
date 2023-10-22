@@ -8,10 +8,10 @@ import  Button  from '../button/Button';
 
 import './Header.css';
 import Image from '../../images/headerImage.png';
-import ImageDestino from '../../images/destination 1.png'; 
-import ImageAtividade from '../../images/activities 1.png'; 
-import ImageDuracao from '../../images/duration 1.png'; 
-import ImageConsulta from '../../images/budget 1.png';
+import ImageDestino from '../../images/icons/destination.svg'; 
+import ImageAtividade from '../../images/icons/activities.svg'; 
+import ImageDuracao from '../../images/icons/duration.svg'; 
+import ImageConsulta from '../../images/icons/budget.svg';
 
 const CAROUSEL_IMAGES = [Image, Image, Image];
 

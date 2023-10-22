@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../images/logo.png';
 import Button from '../button/Button';
-import MenuIcon from '../../images/icons8-cardápio-64 2.png';
-import CloseIcon from '../../images/icons8-excluir-60 1.png';
+import Logo from '../../images/icons/logo.svg';
+import MenuIcon from '../../images/icons/icons8-cardápio-64.svg';
+import CloseIcon from '../../images/icons/icons8-excluir-60.svg';
 import './Navbar.css';
 
 const NavbarTab = () => {
@@ -45,9 +45,9 @@ const NavbarTab = () => {
             <div className="meu-navbar-informs hide">
                 <ul className="meu-inf-menu">
                     <InformationLink href="mailto:tour.support@gmail.com">tour.support@gmail.com</InformationLink>
-                    <InformationLink href="">Sobre nós</InformationLink>
-                    <InformationLink href="">Contato</InformationLink>
-                    <InformationLink href="" className="off-bord">Fotos</InformationLink>
+                    <InformationLink href="#">Sobre nós</InformationLink>
+                    <InformationLink href="#">Contato</InformationLink>
+                    <InformationLink href="#" style={{ borderRight: "0px solid !important" }}>Fotos</InformationLink>
 
                 </ul>
             </div>
@@ -59,10 +59,10 @@ const NavbarTab = () => {
                     <img src={isMenuOpen ? CloseIcon : MenuIcon} alt={isMenuOpen ? "Fechar" : "Menu"} />
                 </div>
                 <ul className={isMenuOpen ? 'nav-menu active' : 'nav-menu'}>
-                    <NavbarLink href="/">IDIOMA</NavbarLink>
-                    <NavbarLink href="/sobre">CARRINHO</NavbarLink>
-                    <NavbarLink href="/cursos">AJUDA</NavbarLink>
-                    <NavbarLink href="/cursos">LOGIN</NavbarLink>
+                    <NavbarLink href="#">IDIOMA</NavbarLink>
+                    <NavbarLink href="#">CARRINHO</NavbarLink>
+                    <NavbarLink href="#">AJUDA</NavbarLink>
+                    <NavbarLink href="#">LOGIN</NavbarLink>
                 </ul>
                 {showButton && <Button buttonSize="meu-btn--small">CRIAR CONTA</Button>}
             </div>

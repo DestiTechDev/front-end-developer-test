@@ -11,10 +11,10 @@ import Packges1 from '../../images/packges1.png';
 import Packges2 from '../../images/packges2.png';
 import Packges3 from '../../images/packges3.png';
 
-import Rectangle22 from '../../images/Rectangle 22.png';
-import Rectangle24 from '../../images/Rectangle 24.png';
-import Rectangle25 from '../../images/Rectangle 25.png';
-import Rectangle26 from '../../images/Rectangle 26.png';
+import Rectangle22 from '../../images/Rectangle22.png';
+import Rectangle24 from '../../images/Rectangle24.png';
+import Rectangle25 from '../../images/Rectangle25.png';
+import Rectangle26 from '../../images/Rectangle26.png';
 
 
 function Packages() {
@@ -28,14 +28,14 @@ function Packages() {
                 <Fade duration={2500}>
                     <Col className="prod-col">
                         <Carousel variant="dark" className="prod-carousel">
-                            <Carousel.Item interval={1000} className="prod-car-item">
+                            <Carousel.Item interval={5000} className="prod-car-item">
                                     <CardGroup className="prod-card">
                                         <Cards src={Packges1} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh." title="Salvador - BA" price="R$800,00" />
                                         <Cards src={Packges2} description="Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis." title="Angra dos Reis - RJ" price="R$640,00" />
                                         <Cards src={Packges3} description="Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus."  title="São Paulo - SP" price="R$240,00" />
                                     </CardGroup>
                             </Carousel.Item>
-                            <Carousel.Item interval={1000} className="prod-car-item">
+                            <Carousel.Item interval={5000} className="prod-car-item">
                                     <CardGroup className="prod-card">
                                         <Cards src={Packges1} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh." title="Salvador - BA" price="R$800,00" />
                                         <Cards src={Packges2} description="Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis." title="Angra dos Reis - RJ" price="R$640,00" />

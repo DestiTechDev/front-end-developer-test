@@ -141,9 +141,6 @@
 .menu-icon {
     display: none;
 }
-.off-bord {
-    border-right: 0px solid !important;
-} 
 
 @media screen and (max-width: 960px) {
     .NavbarItems {
@@ -238,5 +235,4 @@
         color: #242424;
         transition: 250ms;
     }
-
 }
