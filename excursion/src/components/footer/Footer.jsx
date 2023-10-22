@@ -18,7 +18,6 @@ const CustomToggle = ({ eventKey, title }) => {
 const Footer = () => {
     return (
         <footer>
-            {/* Accordion para dispositivos móveis */}
             <Accordion className="d-md-none">
                 <Card className="accordion-d">
                     <CustomToggle  eventKey="0" title="PRECISA DE AJUDA?" />
@@ -71,7 +70,6 @@ const Footer = () => {
                 </Card>
             </Accordion>
 
-            {/* Divs para telas maiores */}
             <div className="columns d-none d-md-flex">
                 <div className="column c-1">
                     <h3>PRECISA DE AJUDA?</h3>
@@ -111,11 +109,11 @@ const Footer = () => {
             <div className="copyright">
                 <p>&copy; Copyright 2002</p>
                 <div className="social-icons">
-                    <a href="#"><FaFacebook /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><BsYoutube /></a>
-                    <a href="#"><FaInstagram /></a>
-                    <a href="#"><BsLinkedin /></a>
+                    <a href='/'><FaFacebook /></a>
+                    <a href='/'><FaTwitter /></a>
+                    <a href='/'><BsYoutube /></a>
+                    <a href='/'><FaInstagram /></a>
+                    <a href='/'><BsLinkedin /></a>
                 </div>
             </div>
         </footer>
