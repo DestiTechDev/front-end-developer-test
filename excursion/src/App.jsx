@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Packages from "./components/packages/Packages";
 import Footer from "./components/footer/Footer";
 import Form from "./components/form/Form";
+import Blog from "./components/blog/Blog";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Packages/>
       <Form/>
+      <Blog/>
       <Footer/>
     </div>
   )

@@ -111,11 +111,11 @@ const Footer = () => {
             <div className="copyright">
                 <p>&copy; Copyright 2002</p>
                 <div className="social-icons">
-                    <a href="#"><FaFacebook /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><BsYoutube /></a>
-                    <a href="#"><FaInstagram /></a>
-                    <a href="#"><BsLinkedin /></a>
+                    <a href='/'><FaFacebook /></a>
+                    <a href='/'><FaTwitter /></a>
+                    <a href='/'><BsYoutube /></a>
+                    <a href='/'><FaInstagram /></a>
+                    <a href='/'><BsLinkedin /></a>
                 </div>
             </div>
         </footer>

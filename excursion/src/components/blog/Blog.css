@@ -1,0 +1,218 @@
+.container-ins {
+  padding-right: 0 !important;
+}
+
+.firstRow {
+  padding-top: 5%;
+  width: 80%;
+  margin-left: 13% !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.firstRow-div {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+
+}
+
+.rowFirstCard {
+  text-align: left;
+}
+
+.rowFirstCard p {
+  width: 70%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.rowFirstCard h6 {
+  font-family: 'Poppins';
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+
+.SndRow {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.SndRow h3 {
+  text-align: center;
+}
+.card-bady
+
+.title hr {
+  width: 3% !important;
+  margin: auto !important;
+  padding: 2px;
+  background-color: #4688F2 !important;
+  opacity: 10 !important;
+  border: none !important;
+  margin-top: 20px!important;
+  margin-bottom: 50px !important;
+}
+
+.SndRow-carousel {
+  width: 90% !important;
+  margin: auto;
+}
+
+.SndRow-card {
+  padding: 100px;
+  padding-top: 10px;
+  margin-left: 9%
+}
+
+.SndRow-CG {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.carousel-control-prev {
+  margin-left: 0px !important;
+}
+
+
+.thdRow {
+  background-color: #F7F7F7;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 0!important;
+  width: 103.39;
+}
+
+.thdRow-carousel {
+  width: 95%!important;
+  margin: auto;
+}
+
+.thdRow-CG {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.thdRow-CG img {
+  width: 150px;
+  height: 100px;
+  opacity: 0.3;
+
+}
+.thdRow-CG img:hover {
+  opacity: 1!important ;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .firstRow {
+    flex-wrap: wrap;
+    margin-left: 10% !important;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .rowFirstCard p {
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+
+  }
+  .rowFirstCard h6 {
+    font-size: 1rem;
+    width: 140%;
+  }
+
+  .SndRow-title::after {
+    display: none;
+  }
+
+  .SndRow-carousel {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .SndRow-card {
+    padding: 70px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    .firstRow {
+      flex-wrap: wrap;
+      padding-top: 15%;
+    }
+    .firstRow-div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .rowFirstCard h6 {
+      font-size: 1rem;
+      text-align: center!important;
+      width: 100%
+    }
+
+    .rowFirstCard p {
+      width: 110%;
+      font-family: 'Poppins';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+
+    }
+    
+    .SndRow-title::after {
+      display: none;
+    }
+
+    .SndRow-carousel {
+      width: 150% !important;
+      margin: auto;
+    }
+
+
+    .title hr {
+      width: 8% !important;
+      margin-bottom: 5px!important;
+    }
+
+    .thdRow-carousel {
+      width: 100%!important;
+      margin: auto;
+    }
+    
+    .thdRow-CG {
+      gap: 20px;
+    }
+    
+    .thdRow-CG img {
+      width: 130px;
+      height: 80px;
+    }
+
+  }
+}

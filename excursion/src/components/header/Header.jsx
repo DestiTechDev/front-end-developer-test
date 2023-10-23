@@ -7,7 +7,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import  Button  from '../button/Button';
 
 import './Header.css';
-import Image from '../../images/headerImage.png';
+import Image from '../../images/header-image.png';
 import ImageDestino from '../../images/icons/destination.svg'; 
 import ImageAtividade from '../../images/icons/activities.svg'; 
 import ImageDuracao from '../../images/icons/duration.svg'; 
@@ -17,8 +17,8 @@ const CAROUSEL_IMAGES = [Image, Image, Image];
 
 const DropdownOption = ({ id, image, altText, text, items }) => (
   <div>
-    <Dropdown className="custom-dropdown">
-      <Dropdown.Toggle variant="custom-select" id={id}>
+      <Dropdown className="custom-dropdown">
+        <Dropdown.Toggle variant="custom-select" id={id}>
         <img src={image} alt={altText} /> <span className="custom-text">{text}</span>
       </Dropdown.Toggle>
       <Dropdown.Menu className={id === 'dropdown-consulta' ? 'wide-dropdown' : ''}>
