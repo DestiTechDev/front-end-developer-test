@@ -1,0 +1,16 @@
+.Head1 {
+  color: white;
+  height: 40px;
+  background-color: #192945;
+  padding-right: 16vw;
+}
+
+.Head1 a {
+  border-right: 1px solid white;
+  margin: 7.5px 0;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+
