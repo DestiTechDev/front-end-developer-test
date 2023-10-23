@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -20,14 +20,14 @@ import Rectangle26 from '../../images/image26.png';
 function Packages() {
     const [groupedCards, setGroupedCards] = useState([]);
 
-    const cardsData = [
+    const cardsData = useMemo(() =>[
         { src: Packges1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.", title: "Salvador - BA", price: "R$800,00" },
         { src: Packges2, description: "Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.", title: "Angra dos Reis - RJ", price: "R$640,00" },
         { src: Packges3, description: "Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.", title: "São Paulo - SP", price: "R$240,00"},
         { src: Packges1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.", title: "Salvador - BA", price: "R$800,00" },
         { src: Packges2, description: "Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.", title: "Angra dos Reis - RJ", price: "R$640,00" },
         { src: Packges3, description: "Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.", title: "São Paulo - SP", price: "R$240,00" },
-    ];
+    ],[]);
 
     // Hook de efeito para lidar com o redimensionamento da janela
     useEffect(() => {
@@ -57,7 +57,7 @@ function Packages() {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [cardsData]);
 
     return (
         <Container className="prod-container">

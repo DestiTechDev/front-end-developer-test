@@ -50,24 +50,24 @@ const NavbarTab = () => {
             <div className="meu-navbar-informs hide">
                 <ul className="meu-inf-menu">
                     <InformationLink href="mailto:tour.support@gmail.com">tour.support@gmail.com</InformationLink>
-                    <InformationLink href="#">Sobre nós</InformationLink>
-                    <InformationLink href="#">Contato</InformationLink>
-                    <InformationLink href="#" className="no-border-right">Fotos</InformationLink>
+                    <InformationLink href="/">Sobre nós</InformationLink>
+                    <InformationLink href="/">Contato</InformationLink>
+                    <InformationLink href="/" className="no-border-right">Fotos</InformationLink>
 
                 </ul>
             </div>
             <div className="meu-navbar-container">
-                <a href="#" className="meu-navbar-logo" onClick={closeMenu}>
+                <a href="/" className="meu-navbar-logo" onClick={closeMenu}>
                     <img src={Logo} alt="Logo" />
                 </a>
                 <div className="menu-icon" onClick={toggleMenu}>
                     <img src={isMenuOpen ? CloseIcon : MenuIcon} alt={isMenuOpen ? "Fechar" : "Menu"} />
                 </div>
                 <ul className={isMenuOpen ? 'nav-menu active' : 'nav-menu'}>
-                    <NavbarLink href="#">IDIOMA</NavbarLink>
-                    <NavbarLink href="#">CARRINHO</NavbarLink>
-                    <NavbarLink href="#">AJUDA</NavbarLink>
-                    <NavbarLink href="#">LOGIN</NavbarLink>
+                    <NavbarLink href="/">IDIOMA</NavbarLink>
+                    <NavbarLink href="/">CARRINHO</NavbarLink>
+                    <NavbarLink href="/">AJUDA</NavbarLink>
+                    <NavbarLink href="/">LOGIN</NavbarLink>
                 </ul>
                 {showButton && <Button buttonSize="meu-btn--small">CRIAR CONTA</Button>}
             </div>
