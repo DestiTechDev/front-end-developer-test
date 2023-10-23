@@ -62,10 +62,11 @@ button {
 
         .form-container {
             width: 80% !important;
+            margin:0%
         }
 
         .col-md-6 {
-            padding-bottom: 35px !important;
+            padding-bottom: 5% !important;
         }
 
         textarea.form-control {
