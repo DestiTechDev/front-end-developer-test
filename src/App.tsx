@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Badges from './components/Badges'
 import Blog from './components/Blog'
 import Partners from './components/Partners'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       </div>
       <Blog />
       <Partners />
+      <Footer/>
     </div>
   )
 }
