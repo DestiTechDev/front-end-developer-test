@@ -12,10 +12,10 @@ import Packges1 from '../../images/packges1.png';
 import Packges2 from '../../images/packges2.png';
 import Packges3 from '../../images/packges3.png';
 
-import Rectangle22 from '../../images/rectangle22.png';
-import Rectangle24 from '../../images/rectangle24.png';
-import Rectangle25 from '../../images/rectangle25.png';
-import Rectangle26 from '../../images/rectangle26.png';
+import Rectangle22 from '../../images/image22.png';
+import Rectangle24 from '../../images/image24.png';
+import Rectangle25 from '../../images/image25.png';
+import Rectangle26 from '../../images/image26.png';
 
 function Packages() {
     const [groupedCards, setGroupedCards] = useState([]);
