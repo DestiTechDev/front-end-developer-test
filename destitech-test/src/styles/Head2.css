@@ -1,0 +1,24 @@
+.Head2 {
+ height: 100px;
+}
+
+.navbar {
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav li {
+  margin-right: 10px;
+  font-weight: bold;
+  --bs-nav-link-color: black;
+}
+
+.btn {
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+}
