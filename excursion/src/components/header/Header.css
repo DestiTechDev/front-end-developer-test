@@ -42,6 +42,14 @@
     align-items: center;
     
 }
+.home-carrossel, .home-carrossel img {
+    width: 100%;
+}
+
+.home-row, .home-col {
+    margin: 0;
+    padding: 0;
+}
 
 .custom-dropdown .dropdown-toggle::after {
     margin-left: auto;

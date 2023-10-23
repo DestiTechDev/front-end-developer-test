@@ -36,7 +36,7 @@ function Header() {
         <Col className="home-col">
           <Carousel className="home-carrossel" indicators={false}>
             {CAROUSEL_IMAGES.map((img, idx) => (
-              <Carousel.Item key={idx} interval={1500} className="home-car-item">
+              <Carousel.Item key={idx} interval={5000} className="home-car-item">
                 <img className="d-block" src={img} alt={`Slide ${idx + 1}`} />
               </Carousel.Item>
             ))}

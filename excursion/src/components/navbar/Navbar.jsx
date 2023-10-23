@@ -32,8 +32,8 @@ const NavbarTab = () => {
         </li>
     );
 
-    const InformationLink = ({ href, children }) => (
-        <li className="meu-inf-itens">
+    const InformationLink = ({ href, children, className }) => (
+        <li className={`meu-inf-itens ${className || ""}`}>
             <a className="meu-inf-links" href={href}>
                 {children}
             </a>
@@ -47,7 +47,7 @@ const NavbarTab = () => {
                     <InformationLink href="mailto:tour.support@gmail.com">tour.support@gmail.com</InformationLink>
                     <InformationLink href="#">Sobre nós</InformationLink>
                     <InformationLink href="#">Contato</InformationLink>
-                    <InformationLink href="#" style={{ borderRight: "0px solid !important" }}>Fotos</InformationLink>
+                    <InformationLink href="#" className="no-border-right">Fotos</InformationLink>
 
                 </ul>
             </div>
