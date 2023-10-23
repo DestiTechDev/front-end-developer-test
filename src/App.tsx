@@ -6,6 +6,9 @@ import Form from './components/Form'
 import Package from './components/Package'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import Badges from './components/Badges'
+import Blog from './components/Blog'
+import Partners from './components/Partners'
 
 function App() {
   return (
@@ -31,8 +34,17 @@ function App() {
           <div className="w-10 border-2 border-solid border-secondary mx-auto my-4"></div>
         </div>
       </div>
-      <Gallery/>
-      <Contact/>
+      <Gallery />
+      <Contact />
+      <Badges />
+      <div className="w-full flex items-center justify-center mt-20">
+        <div>
+          <p className="text-4xl font-semibold">BLOG</p>
+          <div className="w-10 border-2 border-solid border-secondary mx-auto my-4"></div>
+        </div>
+      </div>
+      <Blog />
+      <Partners />
     </div>
   )
 }

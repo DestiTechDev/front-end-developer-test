@@ -13,9 +13,9 @@ module.exports = {
       },
     },
     screens: {
-      mobile: "414px",
-      middle: "768px",
-      desktop: "1920px",
+      sm: "414px",
+      md: "768px",
+      lg: "1920px",
     },
   },
   plugins: [],

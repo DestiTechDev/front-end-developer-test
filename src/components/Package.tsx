@@ -1,4 +1,3 @@
-import React from 'react'
 import picture2 from '../assets/picture-2.png'
 import { GrLocation } from "react-icons/gr"
 import { MdArrowBackIosNew } from 'react-icons/md'
@@ -6,7 +5,7 @@ import { MdArrowForwardIos } from 'react-icons/md'
 
 function Package() {
   return (
-    <div className="w-2/3 mx-auto relative">
+    <div className="mx-auto relative">
       <div className="flex items-center justify-center space-x-10 mt-4">
 
         <div className="w-96 flex-col justify-center flex-wrap shadow-xl">
@@ -80,13 +79,9 @@ function Package() {
 
         
       </div>
-      <div className="w-full absolute flex items-center justify-between top-1/2">
-          <button style={{ transform: "translateX(-44px)"}}>
+      <div className="w-full absolute flex items-center justify-center top-1/2 gap-[1280px]">
             <MdArrowBackIosNew size={40} color="black" />
-          </button>
-          <button style={{ transform: "translateX(44px)"}}>
             <MdArrowForwardIos size={40} color="black" />
-          </button>
         </div>
     </div>
   )
