@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Fade } from "react-awesome-reveal";
 import { Col, Form, Row, Button, Container } from 'react-bootstrap';
-import BackgroundImg from '../../images/Rectangle27.png';
+import BackgroundImg from '../../images/rectangle27.png';
 import './Form.css';
 
 const ContactForm = () => {

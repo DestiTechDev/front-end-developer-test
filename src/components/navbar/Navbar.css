@@ -22,6 +22,10 @@
         opacity: 1;
     }
 }
+.no-border-right{
+    border-right: none !important;
+}
+
 
 .meu-navbar {
     width: 100%;
