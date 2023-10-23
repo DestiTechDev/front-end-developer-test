@@ -42,8 +42,9 @@
 }
 
 .meu-btn--small {
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 15px;
+  width: 120%;
 }
 
 .meu-btn--medium {

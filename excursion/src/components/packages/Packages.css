@@ -8,10 +8,15 @@
     --font-logo: #192945;
     --btn-alternativo: #4688F2;
 }
+.prod-carousel .carousel-control-prev {
+    left: -10%; 
+}
 
-
+.prod-carousel .carousel-control-next {
+    right: -10%; 
+}
 .carousel-dark .carousel-indicators [data-bs-target] {
-    background-color: transparent;
+    background-color: transparent!important;
 }
 
 .prod-container {
@@ -89,6 +94,7 @@ hr {
     }
 
     @media only screen and (max-width: 575px) {
+        
 
         .prod-container {
             padding-top: 13% !important;
@@ -111,7 +117,7 @@ hr {
         }
 
         .prod-card {
-            width: 350%;
+            width: 100%;
         }
 
         .prod-carousel {
@@ -133,7 +139,7 @@ hr {
         }
 
         .img {
-            width: 70%;
+            width: 90%;
         }
 
         hr {

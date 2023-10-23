@@ -22,7 +22,10 @@ function Cards(props) {
                 </Card.Body>
                 <Card.Footer className='prod-cardFooter'>
                     <p className="text-muted">
-                        <small className='smallLocal'><CiLocationOn />Brasil</small>
+                        <small className='smallLocal  location-container'>
+                            <CiLocationOn />
+                            <span>Brasil</span>
+                        </small>
                         <small className='smallPrice'>{props.price}</small>
                     </p>
                 </Card.Footer>

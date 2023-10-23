@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,32 +17,62 @@ import Rectangle24 from '../../images/Rectangle24.png';
 import Rectangle25 from '../../images/Rectangle25.png';
 import Rectangle26 from '../../images/Rectangle26.png';
 
-
 function Packages() {
+    const [groupedCards, setGroupedCards] = useState([]);
+
+    const cardsData = [
+        { src: Packges1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.", title: "Salvador - BA", price: "R$800,00" },
+        { src: Packges2, description: "Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.", title: "Angra dos Reis - RJ", price: "R$640,00" },
+        { src: Packges3, description: "Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.", title: "São Paulo - SP", price: "R$240,00"},
+        { src: Packges1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.", title: "Salvador - BA", price: "R$800,00" },
+        { src: Packges2, description: "Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.", title: "Angra dos Reis - RJ", price: "R$640,00" },
+        { src: Packges3, description: "Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.", title: "São Paulo - SP", price: "R$240,00" },
+    ];
+
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth < 768) {
+                const newGroupSize = 1;
+                const newGroupedCards = [];
+                for(let i = 0; i < cardsData.length; i += newGroupSize) {
+                    newGroupedCards.push(cardsData.slice(i, i + newGroupSize));
+                }
+                setGroupedCards(newGroupedCards);
+            } else {
+                const newGroupSize = 3;
+                const newGroupedCards = [];
+                for(let i = 0; i < cardsData.length; i += newGroupSize) {
+                    newGroupedCards.push(cardsData.slice(i, i + newGroupSize));
+                }
+                setGroupedCards(newGroupedCards);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <Container className="prod-container">
             <Row className="prod-row">
-
                 <h1 className='titulo'>NOSSOS PACOTES</h1>
                 <hr/>
                 <Fade duration={2500}>
                     <Col className="prod-col">
                         <Carousel variant="dark" className="prod-carousel">
-                            <Carousel.Item interval={5000} className="prod-car-item">
+                            {groupedCards.map((group, index) => (
+                                <Carousel.Item interval={5000} className="prod-car-item" key={index}>
                                     <CardGroup className="prod-card">
-                                        <Cards src={Packges1} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh." title="Salvador - BA" price="R$800,00" />
-                                        <Cards src={Packges2} description="Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis." title="Angra dos Reis - RJ" price="R$640,00" />
-                                        <Cards src={Packges3} description="Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus."  title="São Paulo - SP" price="R$240,00" />
+                                        {group.map((card, cardIndex) => (
+                                            <Cards key={cardIndex} src={card.src} description={card.description} title={card.title} price={card.price} />
+                                        ))}
                                     </CardGroup>
-                            </Carousel.Item>
-                            <Carousel.Item interval={5000} className="prod-car-item">
-                                    <CardGroup className="prod-card">
-                                        <Cards src={Packges1} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh." title="Salvador - BA" price="R$800,00" />
-                                        <Cards src={Packges2} description="Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis." title="Angra dos Reis - RJ" price="R$640,00" />
-                                        <Cards src={Packges3} description="Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus."  title="São Paulo - SP" price="R$240,00" />
-                                    </CardGroup>
-                            </Carousel.Item>
+                                </Carousel.Item>
+                            ))}
                         </Carousel>
                     </Col>
                 </Fade>
