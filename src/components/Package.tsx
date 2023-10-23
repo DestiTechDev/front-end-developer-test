@@ -80,8 +80,8 @@ function Package() {
         
       </div>
       <div className="w-full absolute flex items-center justify-center top-1/2 gap-[1280px]">
-            <MdArrowBackIosNew size={40} color="black" />
-            <MdArrowForwardIos size={40} color="black" />
+            <MdArrowBackIosNew className="cursor-pointer" size={40} color="black" />
+            <MdArrowForwardIos className="cursor-pointer" size={40} color="black" />
         </div>
     </div>
   )

@@ -23,7 +23,7 @@ function Contact() {
                 </input>
               </div>
               <textarea className="w-full h-40 bg-gray-100 rounded-base p-3 resize-none text-base" placeholder='Escreva sua mensagem (opcional)'/>
-              <button className="w-full h-20 bg-secondary text-white text-xl font-semibold rounded-sm p-3">ENVIAR MENSAGEM</button>
+              <button className="w-full h-20 bg-secondary text-white text-xl font-semibold rounded-sm p-3 hover:bg-primary">ENVIAR MENSAGEM</button>
             </div>
           </div>
         </div>
