@@ -5,6 +5,7 @@ import './Footer.css';
 import { Accordion, Card, useAccordionButton } from 'react-bootstrap';
 import ArrowIcon from "../../images/icons/icon-arrow-down.svg";
 
+// Um botão customizado que permite expandir/collapsar uma seção do acordeão.
 const CustomToggle = ({ eventKey, title }) => {
     const decoratedOnClick = useAccordionButton(eventKey);
     return (
@@ -18,7 +19,6 @@ const CustomToggle = ({ eventKey, title }) => {
 const Footer = () => {
     return (
         <footer>
-            {/* Accordion para dispositivos móveis */}
             <Accordion className="d-md-none">
                 <Card className="accordion-d">
                     <CustomToggle  eventKey="0" title="PRECISA DE AJUDA?" />
@@ -71,7 +71,6 @@ const Footer = () => {
                 </Card>
             </Accordion>
 
-            {/* Divs para telas maiores */}
             <div className="columns d-none d-md-flex">
                 <div className="column c-1">
                     <h3>PRECISA DE AJUDA?</h3>

@@ -9,21 +9,25 @@ const NavbarTab = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showButton, setShowButton] = useState(true);
 
+    // Função para alternar o estado de abertura do menu.
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
     const closeMenu = () => setIsMenuOpen(false);
 
     useEffect(() => {
+         // Atualiza a visibilidade do botão dependendo da largura da janela.
         const updateButtonVisibility = () => {
             setShowButton(window.innerWidth > 960);
         };
         updateButtonVisibility();
+        // Adiciona e remove ouvintes de evento para ajustes responsivos.
         window.addEventListener('resize', updateButtonVisibility);
 
         return () => {
             window.removeEventListener('resize', updateButtonVisibility);
         };
     }, []);
-
+    
+// Componente de link do Navbar com fechamento automático do menu ao clicar.
     const NavbarLink = ({ href, children }) => (
         <li className="nav-item">
             <a href={href} className="nav-links" onClick={closeMenu}>
@@ -32,6 +36,7 @@ const NavbarTab = () => {
         </li>
     );
 
+// Componente de link de informação com suporte opcional para estilos adicionais.
     const InformationLink = ({ href, children, className }) => (
         <li className={`meu-inf-itens ${className || ""}`}>
             <a className="meu-inf-links" href={href}>

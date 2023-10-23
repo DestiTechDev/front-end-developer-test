@@ -14,11 +14,12 @@ const Button = ({
     buttonStyle = DEFAULT_STYLE,
     buttonSize = DEFAULT_SIZE
 }) => {
+    // Determina o estilo e tamanho final do botão
     const finalButtonStyle = STYLES.has(buttonStyle) ? buttonStyle : DEFAULT_STYLE;
     const finalButtonSize = SIZES.has(buttonSize) ? buttonSize : DEFAULT_SIZE;
 
     return (
-        <a href="/cadastro" className="meu-btn-mobile">
+        <a href="/" className="meu-btn-mobile">
             <button
                 className={`meu-btn ${finalButtonStyle} ${finalButtonSize}`}
                 onClick={onClick}

@@ -13,8 +13,10 @@ import ImageAtividade from '../../images/icons/activities.svg';
 import ImageDuracao from '../../images/icons/duration.svg'; 
 import ImageConsulta from '../../images/icons/budget.svg';
 
+// Array contendo imagens usadas no carrossel. No caso, a mesma imagem repetida.
 const CAROUSEL_IMAGES = [Image, Image, Image];
 
+// Componente que representa uma opção do dropdown personalizada.
 const DropdownOption = ({ id, image, altText, text, items }) => (
   <div>
       <Dropdown className="custom-dropdown">

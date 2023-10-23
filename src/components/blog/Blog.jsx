@@ -40,6 +40,7 @@ function Blog() {
     { src: BlogImg3, titulo: "The Best Trip", subtitulo: "5 de Setembro, 2022 | 1 Comentários", texto: "The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal" }
   ], []);
 
+  // Efeito para ajustar o tamanho dos ícones e agrupar cards conforme o tamanho da tela
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 768) {
@@ -65,7 +66,8 @@ function Blog() {
 
     window.addEventListener('resize', handleResize);
     handleResize();
-
+    
+ // Limpeza do evento ao desmontar o componente
     return () => {
       window.removeEventListener('resize', handleResize);
     };

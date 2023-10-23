@@ -29,6 +29,7 @@ function Packages() {
         { src: Packges3, description: "Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.", title: "São Paulo - SP", price: "R$240,00" },
     ];
 
+    // Hook de efeito para lidar com o redimensionamento da janela
     useEffect(() => {
         function handleResize() {
             if (window.innerWidth < 768) {
@@ -48,9 +49,11 @@ function Packages() {
             }
         }
 
+        // Adicionando o listener de redimensionamento
         window.addEventListener('resize', handleResize);
         handleResize();
 
+        // Limpa o listener no desmonte do componente
         return () => {
             window.removeEventListener('resize', handleResize);
         };
