@@ -17,7 +17,7 @@
 - **Coding Standards** 
 - **React** 
 - **React-Bootstrap** 
-- **SEO**: 
+- **SEO** 
 - **Animations**
 
 ---
