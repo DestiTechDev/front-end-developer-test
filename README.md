@@ -1,62 +1,38 @@
-# Teste de desenvolvedor Front-End DestiTech
-​
-A DestiTech é uma plataforma de gestão online para empresas de turismo. Nossos produtos e serviços estão em constante evolução para atender às necessidades do cenário tecnológico em constante mudança. Nosso trabalho é ajudar a otimizar tempo com processo automatizados, conectar-se com clientes e fornecedores, e consequentemente expandir seu negócio no ambiente digital e físico.
+## Layout
+<img src="/public/Untitled_Project_V1.gif">
 
-​Estamos procurando desenvolvedores front-end para nossa equipe de desenvolvimento no Brasil com conhecimento em HTML, CSS, Javascript, React, TypeScript e NextJS.
+## Tecnologias usadas
 
-​Se você deseja trabalhar ou aprender sobre o React, TypeScript e NextJS sinta-se à vontade para se inscrever!​​
+  - React, ViteJS, Typescript, Tailwindcss
 
-​
-​
-##### Experiencias:
-* HTML, CSS;
-* JavaScript and jQuery;
-* Git;
-* Sass/less;
-* Gulp or Grunt;
-* Responsive web design;
-​
-​
-##### Diferenciais:
-* React;
-* NextJs ou ViteJS
-* TypeScript;
-* SEO;
-* Tailwindcss;
-* Bootstrap;
-​
-​
-#### Instruções:
-De um Fork neste repositório no git e envie-nos uma solicitação pull. Iremos analisá-lo e retornaremos para falar sobre o seu código!
-​
-* Você precisa codificar o layout de acordo com o link da Figma abaixo;
-* Atualize README.md com suas instruções de execução de código;
-* Faça um pull request;
-​
-​
-##### Layout:
-Layout is available in Figma at https://www.figma.com/file/Pe1SCNyCLq38sY01hL558t/Front-End-Test.
-​
-​
-##### Deve ter:
-* HTML, CSS, JavaScript;
-* Responsive;
-* Coding Standards;
-​
-​
-##### Deveria ter:
-* Bootstrap ou Tailwind;
-* SEO;
-* Optimizations;
-​
-​
-##### Bonus
-* Javascript without plugins;
-* Animations;
-* JavaScript module bundler;
-* Accessibility;
-* React e TypeScript;
-​
-​
+Segue abaixo as instruções de configuração:
 
-Dúvidas, fale com a equipe de desenvolvimento it.dev@destitech.com.br;
+Certifique-se de ter as seguintes ferramentas instaladas e atualizadas no seu sistema: 
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+## Instalação
+
+Siga estas etapas para configurar e executar o projeto localmente:
+
+```bash
+   git clone https://github.com/tnovaes/front-end-developer-test.git
+   cd front-end-developer-test
+```
+
+### Instalar as dependencias
+
+```bash
+  npm install
+```
+### Execute o projeto
+
+```bash
+  npm run dev
+```
+
+## Considerações Finais
+
+Foi meu primeiro projeto utilizando Tailwindcss e fiquei contente em conseguir reproduzir a tela de Desktop, porém tive alguns desafios para implementar a responsividade. Com meu tempo de estudo, não consegui aplicar as mudanças com as configurações de screens que coloquei no tailwind.config, então fica como próximo passo do aprendizado.  
+
