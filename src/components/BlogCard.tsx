@@ -1,5 +1,3 @@
-import React from 'react'
-
 type BlogCardProps = {
   image: string;
   date: string;
