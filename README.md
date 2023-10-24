@@ -1,62 +1,42 @@
-# Teste de desenvolvedor Front-End DestiTech
-​
-A DestiTech é uma plataforma de gestão online para empresas de turismo. Nossos produtos e serviços estão em constante evolução para atender às necessidades do cenário tecnológico em constante mudança. Nosso trabalho é ajudar a otimizar tempo com processo automatizados, conectar-se com clientes e fornecedores, e consequentemente expandir seu negócio no ambiente digital e físico.
+# Excursion Website
 
-​Estamos procurando desenvolvedores front-end para nossa equipe de desenvolvimento no Brasil com conhecimento em HTML, CSS, Javascript, React, TypeScript e NextJS.
+![Badge de versão](https://img.shields.io/badge/version-1.0.0-blue)
+![Badge de linguagens](https://img.shields.io/github/languages/count/LeonardoMeneguelli1/front-end-developer-test)
+![Badge de tamanho do repositório](https://img.shields.io/github/repo-size/LeonardoMeneguelli1/front-end-developer-test)
 
-​Se você deseja trabalhar ou aprender sobre o React, TypeScript e NextJS sinta-se à vontade para se inscrever!​​
+> Este é um projeto frontend para um site de viagens e turismo. Foi desenvolvido utilizando HTML, CSS, JavaScript, com a implementação de design responsivo, padrões de codificação, React-Bootstrap, React, SEO e animações. O objetivo era criar uma interface simples e funcional para apresentar informações relacionadas a destinos turísticos.
 
-​
-​
-##### Experiencias:
-* HTML, CSS;
-* JavaScript and jQuery;
-* Git;
-* Sass/less;
-* Gulp or Grunt;
-* Responsive web design;
-​
-​
-##### Diferenciais:
-* React;
-* NextJs ou ViteJS
-* TypeScript;
-* SEO;
-* Tailwindcss;
-* Bootstrap;
-​
-​
-#### Instruções:
-De um Fork neste repositório no git e envie-nos uma solicitação pull. Iremos analisá-lo e retornaremos para falar sobre o seu código!
-​
-* Você precisa codificar o layout de acordo com o link da Figma abaixo;
-* Atualize README.md com suas instruções de execução de código;
-* Faça um pull request;
-​
-​
-##### Layout:
-Layout is available in Figma at https://www.figma.com/file/Pe1SCNyCLq38sY01hL558t/Front-End-Test.
-​
-​
-##### Deve ter:
-* HTML, CSS, JavaScript;
-* Responsive;
-* Coding Standards;
-​
-​
-##### Deveria ter:
-* Bootstrap ou Tailwind;
-* SEO;
-* Optimizations;
-​
-​
-##### Bonus
-* Javascript without plugins;
-* Animations;
-* JavaScript module bundler;
-* Accessibility;
-* React e TypeScript;
-​
-​
+---
 
-Dúvidas, fale com a equipe de desenvolvimento it.dev@destitech.com.br;
+### 🛠 Tecnologias e Ferramentas Utilizadas
+
+- **HTML**
+- **CSS**
+- **JavaScript** 
+- **Responsive Design** 
+- **Coding Standards** 
+- **React** 
+- **React-Bootstrap** 
+- **SEO** 
+- **Animations**
+
+---
+
+### 🎨 Layout
+
+![excursion (1)](https://github.com/LeonardoMeneguelli1/front-end-developer-test/assets/88052231/fe5fe616-81f6-4b78-b94d-d60ee10f5540)
+
+
+### 🔧 Como rodar o projeto
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/LeonardoMeneguelli1/front-end-developer-test.git
+
+# Instale as dependências (se estiver usando npm)
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
