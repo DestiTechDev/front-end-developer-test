@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className="bg-white w-screen h-20 py-4 space-x-10">
       <div className="flex justify-between items-center mx-72">
-        <img className="mr-10" src={excursion}></img>
+        <img className="mr-10" src={excursion} alt="Excursion"></img>
         <div className="flex justify-between items-center w-[603px]">
           <p className="text-base text-[#2A2146] font-semibold hover:text-secondary">IDIOMA</p>
           <p className="text-base text-[#2A2146] font-semibold hover:text-secondary">CARRINHO</p>

@@ -10,19 +10,19 @@ function Partners() {
   return (
     <div className="mt-40 p-20 bg-gray-100 flex items-center justify-center gap-20 relative">
       <div className="w-40 opacity-30 hover:opacity-100">
-        <img src={airtravel} />
+        <img src={airtravel} alt="Airtravel"/>
       </div>
       <div className="w-40 opacity-30 hover:opacity-100">
-        <img src={travelagency} />
+        <img src={travelagency} alt="Travel Agency"/>
       </div>
       <div className="w-40 opacity-30 hover:opacity-100">
-        <img src={traveling} />
+        <img src={traveling} alt="Traveling"/>
       </div>
       <div className="w-40 opacity-30 hover:opacity-100">
-        <img src={travelwave} />
+        <img src={travelwave} alt="Travel Wave"/>
       </div>
       <div className="w-40 opacity-30 hover:opacity-100">
-        <img src={cloudtravel} />
+        <img src={cloudtravel} alt="Cloud Travel"/>
       </div>
       <div className="w-full absolute flex items-center justify-center top-1/2 gap-[1200px]">
           <MdArrowBackIosNew className="cursor-pointer" size={40} color="black" />

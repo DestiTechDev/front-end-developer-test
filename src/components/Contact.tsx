@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       <div className="w-screen relative mt-20">
-        <img className="w-screen" src={picture9} />
+        <img className="w-screen" src={picture9} alt="Foto de Paisagem"/>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-white w-2/3 items-center justify-center">
             <div className="w-full flex items-center justify-center mt-10">
