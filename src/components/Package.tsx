@@ -1,88 +1,60 @@
-import picture2 from '../assets/picture-2.png'
-import { GrLocation } from "react-icons/gr"
 import { MdArrowBackIosNew } from 'react-icons/md'
 import { MdArrowForwardIos } from 'react-icons/md'
+import { packages } from '../constants'
+import PackageCard from './PackageCard'
+import { useState } from 'react';
+import '../index.css'
 
 function Package() {
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+
+  function handleNextCard() {
+    setCurrentCardIndex((currentCardIndex + 1) % packages.length);
+  };
+
+  function handlePrevCard() {
+    setCurrentCardIndex(
+      currentCardIndex > 0 ? currentCardIndex - 1 : packages.length - 1
+    );
+  };
+
+  const visibleCards = 3;
+  const cardSlice = packages.slice(currentCardIndex, currentCardIndex + visibleCards);
+  if (cardSlice.length < visibleCards) {
+    const remainingCards = visibleCards - cardSlice.length;
+    const firstCards = packages.slice(0, remainingCards);
+    cardSlice.push(...firstCards);
+  }
+
   return (
     <div className="mx-auto relative">
       <div className="flex items-center justify-center space-x-10 mt-4">
-
-        <div className="w-96 flex-col justify-center flex-wrap shadow-xl">
-          <img src={picture2}></img>
-          <div className="m-4 text-left p-2 border-b-2 border-b-slate-200">
-            <p className="font-semibold text-xl">Salvador - BA</p>
-            <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.</p>
-            <ul className="list-disc text-xs my-6 ml-6">
-              <li>Cras urna dui</li>
-              <li>Scelerisque aliquam felis in</li>
-              <li>Aliquet efficitur neque</li>
-              <li>Proin eget rutrum mi</li>
-              <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
-            </ul>
-          </div>
-
-          <div className="flex justify-between px-4 pb-4">
-            <div className="w-12 flex justify-between items-center">
-              <GrLocation size={12} />
-              <p className="text-xs">Brasil</p>
-            </div>
-            <p className="text-2xl text-secondary font-semibold">R$ 800,00</p>
-          </div>
+          {cardSlice.map((p) => (
+            <PackageCard
+              key={p.id}
+              image={p.image}
+              location={p.location}
+              description={p.description}
+              amenities={p.amenities}
+              country={p.country}
+              price={p.price}
+            />
+          ))}
         </div>
-
-        <div className="w-96 flex-col justify-center flex-wrap shadow-xl">
-          <img src={picture2}></img>
-          <div className="m-4 text-left p-2 border-b-2 border-b-slate-200">
-            <p className="font-semibold text-xl">Salvador - BA</p>
-            <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.</p>
-            <ul className="list-disc text-xs my-6 ml-6">
-              <li>Cras urna dui</li>
-              <li>Scelerisque aliquam felis in</li>
-              <li>Aliquet efficitur neque</li>
-              <li>Proin eget rutrum mi</li>
-              <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
-            </ul>
-          </div>
-
-          <div className="flex justify-between px-4 pb-4">
-            <div className="w-12 flex justify-between items-center">
-              <GrLocation size={12} />
-              <p className="text-xs">Brasil</p>
-            </div>
-            <p className="text-2xl text-secondary font-semibold">R$ 800,00</p>
-          </div>
-        </div>
-
-        <div className="w-96 flex-col justify-center flex-wrap shadow-xl">
-          <img src={picture2}></img>
-          <div className="m-4 text-left p-2 border-b-2 border-b-slate-200">
-            <p className="font-semibold text-xl">Salvador - BA</p>
-            <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.</p>
-            <ul className="list-disc text-xs my-6 ml-6">
-              <li>Cras urna dui</li>
-              <li>Scelerisque aliquam felis in</li>
-              <li>Aliquet efficitur neque</li>
-              <li>Proin eget rutrum mi</li>
-              <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
-            </ul>
-          </div>
-
-          <div className="flex justify-between px-4 pb-4">
-            <div className="w-12 flex justify-between items-center">
-              <GrLocation size={12} />
-              <p className="text-xs">Brasil</p>
-            </div>
-            <p className="text-2xl text-secondary font-semibold">R$ 800,00</p>
-          </div>
-        </div>
-
-        
-      </div>
       <div className="w-full absolute flex items-center justify-center top-1/2 gap-[1280px]">
-            <MdArrowBackIosNew className="cursor-pointer" size={40} color="black" />
-            <MdArrowForwardIos className="cursor-pointer" size={40} color="black" />
-        </div>
+        <MdArrowBackIosNew
+          className="cursor-pointer"
+          size={40}
+          color="black"
+          onClick={handlePrevCard}
+        />
+        <MdArrowForwardIos
+          className="cursor-pointer"
+          size={40}
+          color="black"
+          onClick={handleNextCard}
+        />
+      </div>
     </div>
   )
 }
