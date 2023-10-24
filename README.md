@@ -10,15 +10,15 @@
 
 ### 🛠 Tecnologias e Ferramentas Utilizadas
 
-- **HTML**:
-- **CSS**: 
-- **JavaScript**: 
-- **Responsive Design**: 
-- **Coding Standards**: 
-- **React**: 
-- **React-Bootstrap**: 
+- **HTML**
+- **CSS**
+- **JavaScript** 
+- **Responsive Design** 
+- **Coding Standards** 
+- **React** 
+- **React-Bootstrap** 
 - **SEO**: 
-- **Animations**: 
+- **Animations**
 
 ---
 
