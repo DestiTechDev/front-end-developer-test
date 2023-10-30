@@ -22,7 +22,7 @@ Este é um projeto FrontEnd focado na venda de pacotes de viagens e turismo, con
 
 ##
 
-### [x] Responsible
+### [x] Responsive
 
 ### [x] SEO
 
