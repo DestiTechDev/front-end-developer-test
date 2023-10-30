@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: #FFFFFF;
+  }
+}
+
+.container {
+  padding: 0;
+  max-width: 1320px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  color: #000000;
+}
+
+.division_h2 {
+  background-color: #4688F2;
+  height: 3px;
+  width: 45px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000000 !important;
+}
+
+.banner-home .slick-next {
+  right: 25px !important;
+}
+
+.banner-home .slick-prev {
+  left: 25px !important;
+  z-index: 99;
+}
+
+.slick-list {
+  padding-bottom: 22px !important;
+}
+
+.css-13cymwt-control, .css-t3ipsp-control {
+  height: 60px;
+  padding-left: 3rem;
+  background-color: #F7F7F7 !important;
+  cursor: pointer !important;
+  width: 92%;
+  border: none !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
+.css-1nmdiq5-menu {
+  color: #000000;
+  z-index: 2 !important;
+}
+
+.css-tj5bde-Svg {
+  fill: #4688F2 !important;
+}
+
+@media (max-width: 1360px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .slick-next {
+    right: 25px !important;
+  }
+  
+  .slick-prev {
+    left: 25px !important;
+    z-index: 99;
+  }
+}
+
+@media (max-width: 1024px) {
+  .css-13cymwt-control, .css-t3ipsp-control {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 28px;
+  }
+}

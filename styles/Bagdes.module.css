@@ -1,0 +1,47 @@
+.bg_bagdes {
+    margin: 150px auto 100px;
+}
+
+.bg_bagdes_card {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 1.375rem;
+    max-width: 366px;
+}
+
+.bg_bagdes_card h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.bg_bagdes_card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 770px) {
+    .bg_bagdes_card {
+        gap: 1.75rem;
+    }
+}
+
+@media (max-width: 639px) {
+    .bg_bagdes {
+        margin: 80px auto 50px;
+    }
+
+    .bg_bagdes_card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bg_bagdes_card {
+        gap: .75rem;
+    }
+}
