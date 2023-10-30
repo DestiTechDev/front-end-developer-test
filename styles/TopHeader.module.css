@@ -1,0 +1,15 @@
+.bg_top_header {
+    background-color: #192945;
+    color: #fff;
+    height: 40px;
+}
+
+.bg_top_header li:hover {
+   color: #4688F2;
+}
+
+@media (max-width: 820px) {
+    .bg_top_header {
+        display: none;
+    }
+}

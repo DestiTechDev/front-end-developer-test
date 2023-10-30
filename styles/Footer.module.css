@@ -1,0 +1,39 @@
+.bg_footer {
+    color: #fff;
+    background-color: #192945;
+}
+
+.bg_footer h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.bg_footer li {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.bg_footer li a:hover {
+    color: #4688F2;
+}
+
+.bg_spacing_footer {
+    padding-top: 100px;
+    padding-bottom: 142px;
+}
+
+.bg_copywrite_footer {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+.bg_media_footer {
+    cursor: pointer;
+}
+
+.bg_media_footer svg:hover path {
+    fill: #4688F2;
+}

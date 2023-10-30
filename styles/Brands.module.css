@@ -1,0 +1,22 @@
+.bg_brands {
+    background-color: #F7F7F7;
+}
+
+.bg_spacing_brands {
+    padding: 90px 0;
+}
+
+.bg_brands_card {
+    display: flex !important;
+    justify-content: center;
+}
+
+.bg_brands_card img {
+    cursor: pointer;
+    width: 180px;
+    opacity: .3;
+}
+
+.bg_brands_card img:hover{
+    opacity: 1;
+}
